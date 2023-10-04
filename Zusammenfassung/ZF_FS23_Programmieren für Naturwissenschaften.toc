@@ -1,0 +1,39 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Excel}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Wichtige Excel-Formeln}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Übliche Diagrammarten und ihre Anwendungen}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Python Datentypen, Funktionen und Methoden}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Datentypen in Python}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Grundlegende Funktionen}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Methoden für Datentyp \texttt {str}}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Methoden für Datentyp \texttt {list}}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Funktionen im Modul \texttt {random}}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Funktionen im Modul \texttt {math}}{7}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Konstanten im Modul \texttt {math}}{8}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Funktionen im Modul \texttt {statistics}}{8}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Wiederholungsserie}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Range und for Schleifen}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Quadratfunktion}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Listenoperationen und dictionary}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Boolesche Operatoren}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Lokale Maxima}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Summe einer Liste < Threshold}{12}{section.3.6}%
+\contentsline {section}{\numberline {3.7}FizzBuzz}{12}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Zufallszahlen}{12}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Geldspielautomat}{13}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Würfelsimulation}{13}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Quadratische funktion mit zwei Lösungen}{14}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Dateiimport und Keywordsuche}{14}{section.3.12}%
+\contentsline {section}{\numberline {3.13}scipy und Kurvenplot}{15}{section.3.13}%
+\contentsline {section}{\numberline {3.14}Verständnisfragen}{16}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Gemischt}{17}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Counter und bool}{17}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}while zu for Schleife}{17}{subsection.3.15.2}%
+\contentsline {subsection}{\numberline {3.15.3}Zufällige Liste erstellen und auftrennen}{17}{subsection.3.15.3}%
+\contentsline {subsection}{\numberline {3.15.4}Aufsummieren einer Liste mit threshold}{18}{subsection.3.15.4}%
+\contentsline {section}{\numberline {3.16}Funktionen mit Userinput}{18}{section.3.16}%
+\contentsline {section}{\numberline {3.17}string-Manipulationen und Matrix}{19}{section.3.17}%
+\contentsline {section}{\numberline {3.18}Gemischte Fragen, Grundlegendes}{20}{section.3.18}%
+\contentsline {section}{\numberline {3.19}Listenmanipultaionen}{21}{section.3.19}%
+\contentsline {section}{\numberline {3.20}Mathematische Funktionen und statistik über Datei}{21}{section.3.20}%
+\contentsline {section}{\numberline {3.21}list\_splitting und multiply into table}{23}{section.3.21}%

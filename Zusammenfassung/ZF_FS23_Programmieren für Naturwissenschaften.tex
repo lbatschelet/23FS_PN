@@ -1,0 +1,1101 @@
+% Programmieren für Naturwissenschaften
+% Zusammenfassung und Musterlösung Wiederholungsserie
+% FS 2023
+% PD Dr. Kaspar Riesen
+% Einführungsstudium Geographie
+% Universität Bern
+% Lukas Batschelet
+
+% This work is licensed under a Creative Commons 
+%“Attribution-NonCommercial-ShareAlike 4.0 International” license.
+
+% Erstellt mit minimalen Code Skills und hauptsächlich ChatGPT auf overleaf.com
+
+\documentclass[11pt, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2cm, headheight=15pt]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{cellspace}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[listings]{tcolorbox}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{enumitem}
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0},
+]{doclicense}
+\lstset{inputencoding=utf8/latin1}
+
+\DeclareUnicodeCharacter{00FC}{\"u} % Für das Zeichen ü
+\DeclareUnicodeCharacter{00F6}{\"o} % Für das Zeichen ö
+\DeclareUnicodeCharacter{00E4}{\"a} % Für das Zeichen ä
+
+\definecolor{codegreen}{rgb}{0,0.7,0.2}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.6,0,0.6}
+\definecolor{codeorange}{rgb}{0.6,0.7,0}
+
+\lstdefinestyle{mystyle}{
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeorange},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\tcbset{
+    colframe=black, % Konturfarbe
+    colback=white, % Hintergrundfarbe
+    arc=0mm % keine abgerundeten Ecken
+}
+
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+\addparagraphcolumntypes{X}
+
+\allsectionsfont{\sffamily}
+\titleformat{\chapter}[hang]{\sffamily\bfseries\LARGE}{\thechapter\quad}{0pt}{\LARGE}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{\sffamily Programmieren für Naturwissenschaften\\ \large PD Dr. Kaspar Riesen\\ \LARGE Zusammenfassung \& Musterlösung Wiederholungsserie}
+\vspace{5cm}
+\author{\sffamily Lukas Batschelet}
+\date{\sffamily FS 2023}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Excel}
+
+\section{Wichtige Excel-Formeln}
+
+Excel bietet eine Vielzahl von Formeln und Funktionen zur Datenanalyse und -manipulation. Hier sind einige der wichtigsten:
+
+\begin{itemize}
+    \item \texttt{ZÄHLEN}(\texttt{Bereich}) - Gibt die Anzahl der Zellen mit Zahlen im angegebenen \texttt{Bereich} zurück.
+    
+    \item \texttt{SUMME}(\texttt{Bereich}) - Addiert alle Zahlen in einem \texttt{Bereich} von Zellen.
+    
+    \item \texttt{WENN}(\texttt{Bedingung}, \texttt{Dann\_Wert}, \texttt{Sonst\_Wert}) - Überprüft eine \texttt{Bedingung} und gibt einen Wert zurück, wenn die Bedingung wahr ist (\texttt{Dann\_Wert}), und einen anderen Wert, wenn sie falsch ist (\texttt{Sonst\_Wert}).
+    
+    \item \texttt{WENNS}(\texttt{Bedingung1}, \texttt{Wert1}, \texttt{Bedingung2}, \texttt{Wert2}, ...) - Ähnlich wie WENN, aber ermöglicht mehrere Bedingungen und Rückgabewerte.
+    
+    \item \texttt{ZÄHLENWENN}(\texttt{Bereich}, \texttt{Kriterium}) - Zählt, wie oft ein bestimmtes \texttt{Kriterium} im angegebenen \texttt{Bereich} erfüllt wird.
+    
+    \item \texttt{ZÄHLENWENNS}(\texttt{Bereich1}, \texttt{Kriterium1}, \texttt{Bereich2}, \texttt{Kriterium2}, ...) - Ähnlich wie ZÄHLENWENN, aber ermöglicht mehrere Bedingungen.
+    
+    \item \texttt{SUMMEWENN}(\texttt{Bereich}, \texttt{Kriterium}, \texttt{Summe\_Bereich}) - Summiert die Werte in einem \texttt{Summe\_Bereich}, die ein bestimmtes \texttt{Kriterium} erfüllen.
+    
+    \item \texttt{SUMMEWENNS}(\texttt{Summe\_Bereich}, \texttt{Bereich1}, \texttt{Kriterium1}, \texttt{Bereich2}, \texttt{Kriterium2}, ...) - Ähnlich wie SUMMEWENN, aber ermöglicht mehrere Bedingungen.
+    
+    \item \texttt{ANZAHL}(\texttt{Bereich}) - Gibt die Anzahl der Einträge in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{GANZZAHL}(\texttt{Zahl}) - Rundet eine \texttt{Zahl} ab auf die nächste ganze Zahl.
+    
+    \item \texttt{NICHT}(\texttt{Logischer\_Wert}) - Kehrt einen logischen Wert um; z.B. wird WAHR zu FALSCH.
+    
+    \item \texttt{UND}(\texttt{Bedingung1}, \texttt{Bedingung2}, ...) - Gibt WAHR zurück, wenn alle Bedingungen erfüllt sind.
+    
+    \item \texttt{ODER}(\texttt{Bedingung1}, \texttt{Bedingung2}, ...) - Gibt WAHR zurück, wenn mindestens eine der Bedingungen erfüllt ist.
+    
+    \item \texttt{WAHR}() - Gibt den logischen Wert WAHR zurück.
+    
+    \item \texttt{FALSCH}() - Gibt den logischen Wert FALSCH zurück.
+    
+    \item \texttt{WOCHENTAG}(\texttt{Datum}, \texttt{Typ}) - Gibt den Wochentag eines bestimmten \texttt{Datums} als Zahl zurück (1 für Sonntag bis 7 für Samstag).
+    
+    \item \texttt{RUNDEN}(\texttt{Zahl}, \texttt{Stellen}) - Rundet eine \texttt{Zahl} auf eine bestimmte Anzahl von Dezimalstellen.
+    
+    \item \texttt{AUFRUNDEN}(\texttt{Zahl}, \texttt{Stellen}) - Rundet eine \texttt{Zahl} immer auf, unabhängig von den Dezimalstellen.
+    
+    \item \texttt{MIN}(\texttt{Bereich}) - Gibt den kleinsten Wert in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{MAX}(\texttt{Bereich}) - Gibt den größten Wert in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{MITTELWERT}(\texttt{Bereich}) - Gibt den Durchschnittswert in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{MEDIAN}(\texttt{Bereich}) - Gibt den mittleren Wert (Median) eines \texttt{Bereichs} zurück.
+    
+    \item \texttt{MODALWERT}(\texttt{Bereich}) - Gibt den am häufigsten vorkommenden Wert in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{QUANTIL}(\texttt{Bereich}, \texttt{Quantil}) - Gibt den Wert an der angegebenen Quantilposition in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{STABW.S}(\texttt{Bereich}) - Gibt die Stichprobenstandardabweichung der Werte in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{HÄUFIGKEIT}(\texttt{Daten\_Bereich}, \texttt{Klassen\_Bereich}) - Gibt eine Häufigkeitsverteilung der Daten in einem \texttt{Bereich} zurück.
+    
+    \item \texttt{GROSS}(\texttt{Text}) - Wandelt einen \texttt{Text} in Großbuchstaben um.
+    
+    \item \texttt{KLEIN}(\texttt{Text}) - Wandelt einen \texttt{Text} in Kleinbuchstaben um.
+    
+    \item \texttt{LÄNGE}(\texttt{Text}) - Gibt die Anzahl der Zeichen in einem \texttt{Text} zurück.
+    
+    \item \texttt{FINDEN}(\texttt{Suchtext}, \texttt{In\_Text}, \texttt{Start}) - Findet eine Zeichenkette innerhalb einer anderen und gibt die Position des ersten Zeichens zurück.
+    
+    \item \texttt{SVERWEIS}(\texttt{Suchkriterium}, \texttt{Tabelle}, \texttt{Spaltenindex}, \texttt{Bereich\_Verweis}) - Sucht in der ersten Spalte einer Tabelle nach einem Wert und gibt einen Wert in derselben Zeile aus einer angegebenen Spalte zurück.
+    
+    \item \texttt{WVERWEIS}(\texttt{Suchkriterium}, \texttt{Tabelle}, \texttt{Zeilenindex}, \texttt{Bereich\_Verweis}) - Ähnlich wie SVERWEIS, sucht aber in der ersten Zeile einer Tabelle.
+    
+    \item \texttt{INDEX}(\texttt{Bereich}, \texttt{Zeile}, \texttt{Spalte}) - Gibt den Wert einer Zelle in einem \texttt{Bereich} basierend auf der angegebenen \texttt{Zeile} und \texttt{Spalte} zurück.
+    
+    \item \texttt{VERGLEICH}(\texttt{Suchwert}, \texttt{Suchbereich}, \texttt{Typ}) - Gibt die relative Position eines angegebenen Elements in einem \texttt{Suchbereich} zurück.
+\end{itemize}
+
+\newpage
+\section{Übliche Diagrammarten und ihre Anwendungen}
+
+\begin{itemize}
+    \item \textbf{Balkendiagramm (Säulendiagramm)}
+    \begin{itemize}
+        \item \textit{Eignung}: Geeignet zur Darstellung von diskreten Datenkategorien und deren Mengen oder Werten. Nützlich für den Vergleich von Datenmengen zwischen verschiedenen Kategorien.
+        \item \textit{Ungeeignet für}: Kontinuierliche Daten und Darstellung von Trends über die Zeit.
+    \end{itemize}
+    
+    \item \textbf{Liniendiagramm}
+    \begin{itemize}
+        \item \textit{Eignung}: Ideal zur Darstellung von Trends und Veränderungen über einen Zeitraum hinweg. Geeignet für kontinuierliche Daten.
+        \item \textit{Ungeeignet für}: Vergleich von diskreten Datenkategorien.
+    \end{itemize}
+    
+    \item \textbf{Kreisdiagramm (Tortendiagramm)}
+    \begin{itemize}
+        \item \textit{Eignung}: Geeignet zur Darstellung von Proportionen und prozentualen Anteilen innerhalb eines Ganzen.
+        \item \textit{Ungeeignet für}: Darstellung von Trends über die Zeit und wenn es viele Kategorien gibt, da dies die Lesbarkeit beeinträchtigt.
+    \end{itemize}
+    
+    \item \textbf{Streudiagramm (Punktdiagramm)}
+    \begin{itemize}
+        \item \textit{Eignung}: Ideal zur Darstellung von Beziehungen zwischen zwei kontinuierlichen Variablen.
+        \item \textit{Ungeeignet für}: Darstellung von kategorischen Daten oder Zeitreihen.
+    \end{itemize}
+    
+    \item \textbf{Histogramm}
+    \begin{itemize}
+        \item \textit{Eignung}: Gut geeignet für die Darstellung von Verteilungen und Häufigkeiten innerhalb von kontinuierlichen Daten.
+        \item \textit{Ungeeignet für}: Kategorische Daten und Darstellung von Beziehungen zwischen zwei Variablen.
+    \end{itemize}
+    
+    \item \textbf{Boxplot (Box-Whisker-Diagramm)}
+    \begin{itemize}
+        \item \textit{Eignung}: Gut geeignet zur Darstellung der Verteilung von Daten und zur Identifizierung von Median, Quartilen und Ausreißern.
+        \item \textit{Ungeeignet für}: Detaillierte Darstellung von einzelnen Datenwerten und Trends über die Zeit.
+    \end{itemize}
+    
+    \item \textbf{Heatmap}
+    \begin{itemize}
+        \item \textit{Eignung}: Geeignet zur Darstellung von Dichteverteilungen oder zur Visualisierung von Daten in einer Matrixform, bei der Farben die Werte repräsentieren.
+        \item \textit{Ungeeignet für}: Darstellung von Trends über die Zeit oder Darstellung von Beziehungen zwischen zwei kontinuierlichen Variablen.
+    \end{itemize}
+    
+    \item \textbf{Blasendiagramm}
+    \begin{itemize}
+        \item \textit{Eignung}: Ähnlich wie ein Streudiagramm, aber mit einer zusätzlichen Dimension, die durch die Größe der Blasen dargestellt wird. Geeignet zur Darstellung von Beziehungen zwischen drei Variablen.
+        \item \textit{Ungeeignet für}: Kategorische Daten und einfache Zeitreihen.
+    \end{itemize}
+\end{itemize}
+
+
+
+
+\chapter{Python Datentypen, Funktionen und Methoden}
+
+\section{Datentypen in Python}
+
+Python unterstützt eine Vielzahl von Datentypen, die in veränderbare (mutable) und unveränderbare (immutable) Typen eingeteilt werden können.
+
+\begin{itemize}
+    \item \texttt{int} (Ganzzahl) - z.B. \texttt{1}, \texttt{42}, \texttt{-10}. (Immutable)
+    \item \texttt{float} (Gleitkommazahl) - z.B. \texttt{3.14}, \texttt{-0.8}, \texttt{2.0}. (Immutable)
+    \item \texttt{complex} (Komplexe Zahl) - z.B. \texttt{1 + 2j}, \texttt{-3.2 + 4.1j}. (Immutable)
+    \item \texttt{str} (Zeichenkette) - z.B. \texttt{"Hello"}, \texttt{'Python'}. (Immutable)
+    \item \texttt{list} (Liste) - eine geordnete Sammlung von Elementen, z.B. \texttt{[1, 2, 3]}. (Mutable)
+    \item \texttt{tuple} (Tupel) - ähnlich einer Liste, aber unveränderbar, z.B. \texttt{(1, 2, 3)}. (Immutable)
+    \item \texttt{set} (Menge) - eine ungeordnete Sammlung von einzigartigen Elementen, z.B. \texttt{\{1, 2, 3\}}. (Mutable)
+    \item \texttt{frozenset} - ähnlich wie ein Set, aber unveränderbar, z.B. \texttt{frozenset([1, 2, 3])}. (Immutable)
+    \item \texttt{dict} (Wörterbuch) - eine Sammlung von Schlüssel-Wert-Paaren, z.B. \texttt{\{'a': 1, 'b': 2\}}. (Mutable)
+    \item \texttt{bool} (Boolescher Wert) - entweder \texttt{True} oder \texttt{False}. (Immutable)
+    \item \texttt{None} - ein spezieller Typ, der das Fehlen eines Wertes repräsentiert. (Immutable)
+    \item \texttt{bytes} - eine Sequenz von Bytes (Werten zwischen 0 und 255), z.B. \texttt{b'hello'}. (Immutable)
+    \item \texttt{bytearray} - ähnlich wie Bytes, aber veränderbar. (Mutable)
+    \item \texttt{memoryview} - ein Objekt, das den Zugriff auf interne Daten eines anderen Objekts ermöglicht, ohne dass eine Kopie gemacht wird. (Mutable)
+\end{itemize}
+
+
+
+\section{Grundlegende Funktionen}
+
+\begin{itemize}
+    \item \texttt{print(*objects, sep=' ', end='\textbackslash{n}', file=sys.stdout, flush=False):} Gibt die Objekte aus, die übergeben werden. Trennt diese standardmäßig mit einem Leerzeichen und fügt am Ende einen Zeilenumbruch hinzu. Die Parameter sind anpassbar.
+    
+    \item \texttt{input([prompt]):} Zeigt optional eine Eingabeaufforderung an und gibt die vom Benutzer eingegebene Zeile als Zeichenkette zurück.
+
+    \item \texttt{int(x[, base]):} Konvertiert eine Zahl oder einen String x in eine Ganzzahl. Optional kann eine Basis angegeben werden.
+
+    \item \texttt{float(x):} Konvertiert eine Zahl oder einen String x in eine Gleitkommazahl.
+    
+    \item \texttt{range([start,] stop[, step]):} Erstellt ein Objekt vom Typ range, das eine Sequenz von Zahlen repräsentiert. Wird oft in Schleifen verwendet.
+    
+    \item \texttt{len(s):} Gibt die Länge (Anzahl der Elemente) eines Objekts (einer Liste, eines Strings, etc.) zurück.
+    
+    \item \texttt{type(object):} Gibt den Typ eines Objekts zurück.
+    
+    \item \texttt{str(object):} Konvertiert ein Objekt in einen String.
+    
+    \item \texttt{list(iterable):} Konvertiert ein iterierbares Objekt (z.B. einen String oder ein Tupel) in eine Liste.
+    
+    \item \texttt{tuple(iterable):} Konvertiert ein iterierbares Objekt in ein Tupel.
+    
+    \item \texttt{set(iterable):} Erzeugt ein Set aus einem iterierbaren Objekt. Ein Set ist eine ungeordnete Sammlung einzigartiger Elemente.
+    
+    \item \texttt{dict(**kwarg), dict(mapping, **kwarg), dict(iterable, **kwarg):} Erzeugt ein neues Wörterbuch.
+    
+    \item \texttt{sorted(iterable, *, key=None, reverse=False):} Gibt eine neue sortierte Liste der Elemente in einem iterierbaren Objekt zurück.
+    
+    \item \texttt{sum(iterable, start=0):} Addiert die Elemente eines iterierbaren Objekts, beginnend mit dem Wert "start".
+    
+    \item \texttt{max(iterable, *[, key, default])} oder \texttt{max(arg1, arg2, *args[, key])}: Gibt das größte Element zurück.
+    
+    \item \texttt{min(iterable, *[, key, default])} oder \texttt{min(arg1, arg2, *args[, key])}: Gibt das kleinste Element zurück.
+    
+    \item \texttt{abs(x):} Gibt den Absolutwert einer Zahl zurück.
+
+\end{itemize}
+
+
+\section{Methoden für Datentyp \texttt{str}}
+
+\begin{itemize}
+    \item \texttt{st.find(s):} Gibt die Position der gesuchten Zeichenkette s in st aus (-1, falls sich s nicht in der Zeichenkette st befinden sollte).
+    
+    \item \texttt{st.endswith(suffix)} und \texttt{st.startswith(prefix):} Gibt den Wahrheitswert True zurück, wenn die Zeichenkette mit dem angegebenen Suffix endet bzw. startet, ansonsten False.
+    
+    \item \texttt{st.count(sub):} Liefert die Anzahl der nicht überlappenden Vorkommen des Teilstrings sub in der Zeichenkette st.
+    
+    \item \texttt{st.lower()} und \texttt{st.upper():} Liefert eine Kopie der Zeichenkette st zurück, in der alle Großbuchstaben in Kleinbuchstaben bzw. alle Kleinbuchstaben in Großbuchstaben umgewandelt sind.
+    
+    \item \texttt{st.replace(old, new):} Gibt eine Kopie der Zeichenkette st zurück, bei der alle Vorkommen von old durch new ersetzt werden.
+    
+    \item \texttt{st.strip([chars]):} Gibt eine Kopie der Zeichenkette st mit entfernten Zeichen chars zurück. Wird der Parameter weggelassen, werden führende und abschließende Leerzeichen entfernt.
+    
+    \item \texttt{st.split(sep):} Gibt eine Liste der Wörter aus der Zeichenkette st zurück, wobei sep als Begrenzungszeichen verwendet wird.
+\end{itemize}
+
+\section{Methoden für Datentyp \texttt{list}}
+
+\begin{itemize}
+    \item \texttt{lst.append(x):} Fügt das Element x am Ende der Liste hinzu.
+    
+    \item \texttt{lst.insert(i, x):} Fügt ein Element an einer bestimmten Position ein. Das erste Argument i ist der Index des Elements, vor dem eingefügt werden soll. Beispiel: \texttt{lst.insert(0, x)} fügt das Element x am Anfang der Liste ein.
+    
+    \item \texttt{lst.remove(x):} Entfernt das erste Element aus der Liste, dessen Wert gleich x ist (löst einen Fehler aus, wenn es kein solches Element gibt).
+    
+    \item \texttt{lst.pop([i]):} Entfernt das Element an der angegebenen Position in der Liste und gibt es zurück. Wenn kein Index i angegeben wird, entfernt \texttt{lst.pop()} den letzten Eintrag in der Liste und gibt ihn zurück.
+    
+    \item \texttt{lst.clear():} Entfernt alle Elemente aus der Liste.
+    
+    \item \texttt{lst.index(x):} Liefert den Index des ersten Elements, dessen Wert gleich x ist (löst einen Fehler aus, wenn es kein solches Element gibt).
+    
+    \item \texttt{lst.count(x):} Liefert die Häufigkeit von x in der Liste.
+    
+    \item \texttt{lst.sort():} Sortiert die Liste.
+\end{itemize}
+
+\section{Funktionen im Modul \texttt{random}}
+
+\begin{itemize}
+    \item \texttt{random.randint(a, b):} Liefert eine zufällige ganze Zahl x, so dass a $\leq$ x $\leq$ b.
+    
+    \item \texttt{random.randrange(a, b[, step]):} Liefert eine zufällige ganze Zahl x, so dass a $\leq$ x $<$ b und (x+a) \% step = 0. Der Standardwert für step ist 1.
+    
+    \item \texttt{random.random():} Liefert eine zufällige Gleitkommazahl aus dem Intervall [0.0, 1.0[.
+    
+    \item \texttt{random.uniform(a, b):} Liefert eine zufällige Gleitkommazahl aus dem Intervall [a, b[.
+    
+    \item \texttt{random.gauss(mu, sigma):} Liefert eine normalverteilte Zufallszahl mit Mittelwert mu und Standardabweichung sigma.
+    
+    \item \texttt{random.shuffle(x):} Mischt die Elemente einer Liste x.
+    
+    \item \texttt{random.choice(x):} Liefert ein zufälliges Element aus der Liste x.
+    
+    \item \texttt{random.sample(x, k):} Liefert eine Liste mit k Elementen, die aus der Liste x ausgewählt wurden (ohne Zurücklegen).
+\end{itemize}
+
+\section{Funktionen im Modul \texttt{math}}
+
+\begin{itemize}
+    \item \texttt{math.ceil(x):} Liefert die kleinste ganze Zahl größer oder gleich x.
+    
+    \item \texttt{math.floor(x):} Liefert die größte ganze Zahl kleiner oder gleich x.
+    
+    \item \texttt{math.comb(n, k):} Liefert die Anzahl der Möglichkeiten, k Elemente aus n Elementen auszuwählen (ohne Zurücklegen, ohne Beachtung der Reihenfolge).
+    
+    \item \texttt{math.perm(n, k):} Liefert die Anzahl der Möglichkeiten, k Elemente aus n Elementen auszuwählen (ohne Zurücklegen, mit Beachtung der Reihenfolge).
+    
+    \item \texttt{math.fabs(x):} Liefert den Absolutwert von x.
+    
+    \item \texttt{math.exp(x):} Gibt $e^x$ zurück, wobei e der Euler'schen Zahl entspricht.
+    
+    \item \texttt{math.log(x[, base]):} Mit einem Argument wird der natürliche Logarithmus von x (zur Basis e) zurückgegeben. Mit zwei Argumenten wird der Logarithmus von x zur angegebenen Basis base zurückgegeben.
+    
+    \item \texttt{math.pow(x, y):} Gibt $x^y$ zurück (im Gegensatz zum eingebauten **-Operator konvertiert math.pow() beide Argumente x und y in Gleitkommazahlen).
+    
+    \item \texttt{math.sqrt(x):} Gibt die Quadratwurzel von x zurück.
+    
+    \item \texttt{math.cos(x):} Liefert den Kosinus eines Winkels x. Analog dazu gibt es \texttt{math.sin(x)}, \texttt{math.tan(x)}.
+    
+    \item \texttt{math.acos(x):} Liefert den Winkel zurück, dessen Cosinus x ist. Analog dazu gibt es \texttt{math.asin(x)}, \texttt{math.atan(x)}.
+\end{itemize}
+
+\subsection{Konstanten im Modul \texttt{math}}
+
+\begin{itemize}
+    \item \texttt{math.pi:} Die mathematische Konstante $\pi \approx 3.141592$.
+    
+    \item \texttt{math.e:} Die mathematische Konstante $e \approx 2.718281$.
+    
+    \item \texttt{math.inf:} Eine Gleitkomma-Unendlichkeit.
+\end{itemize}
+
+\section{Funktionen im Modul \texttt{statistics}}
+
+\begin{itemize}
+    \item \texttt{statistics.mean(data)} und \texttt{statistics.geometric\_mean(data):} Ermittelt den arithmetischen Mittelwert bzw. das geometrische Mittel der Daten.
+    
+    \item \texttt{statistics.median(data):} Ermittelt den Median der Daten. Bei ungerader Anzahl Datenpunkte: mittlerer Wert; bei gerader Anzahl Datenpunkte: Mittelwert der beiden mittleren Werte.
+    
+    \item \texttt{statistics.mode(data):} Ermittelt den häufigsten Datenpunkt aus diskreten oder nominalen Daten. Bei mehreren Modi wird der erste zurückgegeben.
+    
+    \item \texttt{statistics.pvariance(data)} und \texttt{statistics.pstdev(data):} Ermittelt die Populationsvarianz bzw. die Populationsstandardabweichung der Daten.
+    
+    \item \texttt{statistics.quantiles(data, n=x):} Teilt die Daten in x Intervalle mit gleicher Wahrscheinlichkeit und liefert eine Liste von x - 1 Schnittpunkten, die die Intervalle trennen.
+\end{itemize}
+
+
+\chapter{Wiederholungsserie}
+
+\section{Range und for Schleifen}
+Welche Ausgaben produzieren die folgenden Code-Fragmente?
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+for i in range(3, 0, -1):
+    print(i * "*")
+
+***
+**
+*
+
+# (b)
+lst = [1, 2, 3, 4, 5]
+for i in range(1, len(lst)):
+    lst[i] += lst[i - 1]
+print(lst)
+
+[1, 3, 6, 10, 15]
+
+# (c)
+def list_mutation(lst):
+    for i in range(1, len(lst)):
+        lst[i] = lst[i - 1] + lst[i]
+
+lst = [1, 2, 3, 4]
+list_mutation(lst)
+print(lst)
+
+[1, 3, 6, 10]
+
+# (d)
+for i in range(1, 6):
+    print(i, i ** (i % 3 + 1), sep=" -> ")
+
+1 -> 1
+2 -> 8
+3 -> 3
+4 -> 16
+5 -> 125
+\end{tcblisting}
+
+\newpage
+\section{Quadratfunktion}
+Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl $x$ erwartet und danach eine Liste der Grösse $x$ mit den Werten [12, 22, . . . , x2] generiert und sie zur\"uckgibt.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+def quadratliste(x):
+    lst = []
+    for i in range(1, x):
+        lst.append(i ** 2)
+    return lst
+\end{tcblisting}
+
+\section{Listenoperationen und dictionary}
+Schreiben Sie je eine Funktion, welche eine Liste values (beliebiger Länge) als Parameter erwartet und dann Folgendes erledigt:
+(a) Weisen Sie jedem Element in values den entsprechenden Index zu (das erste Element referenziert also 0, das zweite Element 1, usw.).
+(b) Geben Sie alleWerte von values einzeln aus.
+(c) Erhöhen Sie jedes Element in values um1.
+(d) Berechnen Sie die Summe allerWerte aus values und geben Sie das Resultat aus.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+values = [6, 24, 3, 55, 3, 0]
+
+#Aufgabe a
+def indexierung(values):
+    indizes = {}
+    for i in values:
+        indizes.update({i : values.index(i)})
+    return indizes
+
+print("Aufgabe a:", indexierung(values))
+
+#Aufgabe b
+def printer(values):
+    for i in values:
+        print(i)
+
+print("Aufgabe b:")
+printer(values)
+
+#Aufgabe c
+def erhoeher(values):
+    for i in range(len(values)):
+        values[i] += 1
+    return values
+
+print("Aufgabe c: ", erhoeher(values))
+
+#Aufgabe d
+def summarize(values):
+    sum = 0
+    for i in range(len(values)):
+        sum += values[i]
+    return sum
+print(values)
+print("Aufgabe d: ", summarize(values))
+\end{tcblisting}
+
+\section{Boolesche Operatoren}
+Sind folgenden Booleschen Aussagen "True" oder "False"?
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+"Hei" < "Hoi" -> True
+"gruss" < "Ahoi" -> False
+"aaa" < "aa" -> False
+"abrakadabra" < "abrakadabro" -> True
+\end{tcblisting}
+
+\section{Lokale Maxima}
+F\"ur diese Aufgabe soll zunächst eine neue Liste erstellt werden, in welcher die einzelnen Elemente mittels Eingabe des Benutzers bestimmt werden. Sie können ähnlich wie in Aufgabe 5 in Serie 10 eine Abbruchbedingung f\"ur die Eingabe festlegen. Dann schreiben Sie eine Funktion, welche die vom Benutzer definierte Liste als Parameter entgegennimmt, um dann eine neue Liste mit den \textit{lokalen Maxima} zu definieren und auszugeben. In dieser Übung ist eine Zahl genau dann ein lokales Maximum, wenn ihre beiden Nachbarn strikt kleiner sind. Die erste und letzte Zahl in der Liste haben jeweils nur einen Nachbarn und sind somit nach unserer Definition keine lokalenMaxima. Sie können Ihren Code beispielsweise mit der Liste [2,5,4,3,3,7,6,1] testen. Die Ausgabe sollte [5,7] lauten.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+another = "y"
+lst = []
+
+while another == "y":
+    lst.append(input("Geben Sie eine Zahl der Liste hinzu: "))
+    another = input("Wollen Sie eine weitere Zahl hinzufuegen? (y/n)")
+
+def maxima(values):
+    maximas = []
+
+    for i in range(1, len(values) -1): 
+        if values[i] > values[i - 1] and values[i] > values[i + 1]:
+            maximas.append(values[i])
+    return maximas
+
+print(maxima(lst))
+\end{tcblisting}
+
+\newpage
+
+\section{Summe einer Liste < Threshold}
+Schreiben Sie eine Funktion, welche eine Liste lst und einen Schwellwert threshold entgegennimmt.
+Falls die Summe der Einträge in lst kleiner ist als threshold, gibt Ihre Funktion
+True und sonst False zur\"uck. Testen Sie Ihre Funktionmit zwei Eingaben.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+def list_threshold(lst, threshold):
+    sum = 0
+    for i in range(len(lst)):
+        sum += lst[i]
+    check = sum < threshold
+    return check
+
+my_list = range(0, 11)
+print(list_threshold(my_list, 3))
+
+False
+
+\end{tcblisting}
+
+\section{FizzBuzz}
+Schreiben Sie eine Funktion, die f\"ur eine ganze Zahl num (die als Parameter an die Funktion \"ubergeben wird) \"uberpr\"uft, ob diese durch 3 und/oder durch 5 teilbar ist. Falls die Zahl weder durch 3 noch durch 5 teilbar ist, soll die Zahl ausgegeben werden. Ist die Zahl durch 3 teilbar, soll statt der Zahl „Bizz“ ausgegeben werden. Ist die aktuelle Zahl durch 5 teilbar, soll statt der Zahl „Buzz“ ausgegeben werden. Ist die Zahl sowohl durch 3 als auch durch 5 teilbar, soll „Bizz- Buzz“ ausgegeben werden. Rufen Sie die Funktion f\"ur alle ganzen Zahlen von 1 bis 100 auf.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+def fizzbuzz(num):
+    if num % 3 == 0 and num % 5 != 0:
+        return "Fizz"
+    elif num % 5 == 0 and num % 3 != 0:
+        return "Buzz"
+    elif num % 3 == 0 and num % 5 == 0:
+        return "FizzBuzz"
+    else:
+        return num
+    
+for i in range(1, 101):
+    print(i, fizzbuzz(i), sep=" -> ")
+\end{tcblisting}
+
+
+\section{Zufallszahlen}
+Schreiben Sie je eine Programmieranweisung, die Ihnen eine ganzzahlige Zufallszahl aus folgenden Intervallen erzeugt:
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import random
+
+print(random.randint(0, 100))
+print(random.randint(1, 3))
+print(random.randint(5, 10))
+print(random.randint(-10, 0))
+\end{tcblisting}
+
+\section{Geldspielautomat}
+Schreiben Sie eine Funktion, welche einen Geldspielautomaten simuliert. Hierzu sollen drei zufällige Zahlen zwischen 0 und 9 generiert werden und nebeneinander ausgegeben werden. Wenn zwei bzw. drei Ziffern gleich sind, gewinnt der Benutzer den kleinen bzw. grossen Preis (erzeugen Sie entsprechende Ausgaben). Das Spiel soll so lange fortgef\"uhrt werden, bis sich der Benutzer entscheidet, das Spiel zu beenden.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import random
+
+another = "y"
+
+while another == "y":
+    zahl_1 = random.randint(0, 2)
+    zahl_2 = random.randint(0, 2)
+    zahl_3 = random.randint(0, 2)
+    print(zahl_1, zahl_2, zahl_3)
+    if zahl_1 == zahl_2 and zahl_1 == zahl_3:
+        print("Gratulation! Sie haben den grossen Preis gewonnen! Gehen Sie Lotto spielen!")
+    elif zahl_1 == zahl_2 or zahl_1 == zahl_3 or zahl_2 == zahl_3:
+        print("Gratulation! Sie haben den kleinen Preis gewonnen!")
+    else:
+        print("Scchade! Viel Erfolg beim nächsten Versuch!")
+    another = input("Wollen Sie weiterspielen? (y/n)")
+\end{tcblisting}
+
+\section{Würfelsimulation}
+Schreiben Sie eine Funktion, welche 100W\"urfelw\"urfe simuliert und dabei jeweils zählt, wie oft jede Augenzahl auftaucht. Benutzen Sie daf\"ur eine Liste counter mit 6 Einträgen, welche der W\"urfelzahl entsprechen. Benutzen Sie dann die Funktion print, um die Liste auszugeben.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import random
+
+counter = [0, 0, 0, 0, 0, 0]
+
+for i in range(1, 101):
+    wurf = random.randint(1, 6)
+    counter[wurf - 1] += 1
+
+print(counter)
+
+[18, 11, 21, 14, 18, 18]
+\end{tcblisting}
+
+\newpage
+\section{Quadratische funktion mit zwei Lösungen}
+Schreiben Sie eine Funktion, welche $p$ und $q$ als Parameter erwartet. Die Funktion soll f\"ur die Berechnung von $x_1$ und $x_2$ die folgende Formel verwenden und diese dann zur\"uckgeben:
+\begin{equation*}
+    x_{1, 2} = - \frac{p}{2} \pm \sqrt{\left( \frac{p}{2}\right)^2 -q}
+\end{equation*}
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import math
+
+def calculate_x(p, q):
+    # Berechnung innerhalb der Wurzel
+    inner_sqrt = (p / 2) ** 2 - q
+
+    # Überprüfen, ob die Wurzel einen realen Wert hat
+    if inner_sqrt < 0:
+        return "Keine Lösung in den reellen Zahlen"
+
+    sqrt_val = math.sqrt(inner_sqrt)
+
+    # Berechnung von x_1 und x_2
+    x1 = -p / 2 + sqrt_val
+    x2 = -p / 2 - sqrt_val
+
+    return x1, x2
+\end{tcblisting}
+
+\section{Dateiimport und Keywordsuche}
+Auf Ilias finden Sie die Datei data.txt. Schreiben Sie eine Funktion, die einen Parameter search\_string entgegennimmt. Innerhalb der Funktion wird die Datei data.txt geöffnet und danach wird \"uberpr\"uft, ob einer der Einträge in data.txt dem Parameter search\_string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zur\"uck. Testen Sie Ihre Funktion mit zwei verschiedenen Parametern.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+def search_in_file(search_string):
+    with open("data.txt", "r") as file:
+        for line in file:
+            if search_string in line:
+                return True
+    return False
+
+print(search_in_file("Haus"))
+\end{tcblisting}
+
+\newpage
+\section{scipy und Kurvenplot}
+In dieser Aufgabe beschäftigen wir uns mit der scipy-Funktion curve\_fit. Diese Funktion nimmt als Parameter eine Funktion, und zwei Listen xdata und ydata und gibt ein 2-Tupel zur\"uck. Gehen Sie Schritt f\"ur Schritt durch die Aufgabe:
+\begin{enumerate}
+    \item Importieren Sie Bibliotheken numpy, matplotlib.pyplot, scipy.optimize und random
+    \item Definieren Sie die folgende Funktion: $f(x,a,b,c) = a \cdot e^{-bx} + c$
+    \item Kreieren Sie eine Variable xdata und weisen Sie ihr eine Liste mitWerten zwischen 0 und 4 in 0.1-Schritten zu. \textbf{Tipp:} Die Funktion numpy.arange(a,b,c) gibt eine Liste zwischen a und b mit Einträgen in Schritt c zur\"uck.
+    \item Kreieren Sie eine Variable ydata und weisen Sie ihr eine Liste zu. Das Element an Stelle i in dieser Liste soll folgendenWert haben: $f (x_i ,2.5,1.3,0.5)$ + random.uniform(-0.1,0.1), wobei $x_i$ das i-te Element in der Liste xdata ist.
+    \item Rufen Sie die Funktion curve\_fit auf mit den passenden Parametern und speichern Sie das Resultat in Variabeln popt und pcov ab.
+    \item Rufen Sie die Funktion plot mit den Parametern xdata und ydata auf.
+    \item Rufen Sie die Funktion plot mit den Parametern xdata und $f$(xdata, popt[0], popt[1], popt[2]) auf.
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import numpy
+import matplotlib.pyplot
+from scipy.optimize import curve_fit
+import random
+
+# Definition der Funktion
+def f(x, a, b, c):
+    return a * numpy.exp(-b * x) + c
+
+# Erzeugen der x-Daten
+xdata = numpy.arange(0, 4, 0.1)
+
+# Erzeugen der y-Daten
+ydata = f(xdata, 2.5, 1.3, 0.5) + numpy.random.uniform(-0.1, 0.1, len(xdata))
+
+# Durchführen der Kurvenanpassung
+popt, pcov = curve_fit(f, xdata, ydata)
+
+# Plotten der Daten
+matplotlib.pyplot.plot(xdata, ydata, 'o', label='data')
+
+# Plotten der fit-Funktion
+matplotlib.pyplot.plot(xdata, f(xdata, *popt), label='fit')
+
+# Hinzufügen einer Legende
+matplotlib.pyplot.legend()
+
+# Anzeigen des Plots
+matplotlib.pyplot.show()
+
+\end{tcblisting}
+
+\section{Verständnisfragen}
+\begin{enumerate}
+    \item Python verf\"ugt \"uber eine Reihe von sogenannten eingebauten Funktionen. Nennen Sie zwei Beispiele solcher Funktionen.
+    \item Wie rufen Sie in Python eine Funktion bar (ohne Parameter) aus dem importierten Modul foo auf?
+    \item Python Quellcode muss vor der Ausf\"uhrung nicht kompiliert werden. Weshalb nicht?
+    \item Wie können Sie Python Quellcode kommentieren. Geben Sie zwei Möglichkeiten mit je einem Beispiel an.
+    \item Die folgende Funktion printmax soll den grösseren der beiden Parameter val1 oder val2 ausgeben. ImQuellcode befinden sich ein semantischer und ein syntaktischer Fehler. Markieren Sie beide Fehler (mit sem bzw. syn) und korrigieren Sie diese.
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# a bspw. print() oder round()
+
+#b 
+import foo
+foo.bar()
+
+#c
+# Python ist eine interpretierte Sprache und wird zur Laufzeit interpretiert.
+
+#d
+# Beispiel Inline
+
+"""
+Beispiel grössere Blöcke, für Bspw. Codeinformationen
+"""
+#e
+def printmax(val1, val2)
+    if vall < val2:
+        print(val1)
+    else:
+        print(val2)
+
+def printmax(val1, val2): #Doppelpunt hinzugefügt
+    if val1 > val2: #< zu > geändert und vall auf val1 korrigiert
+        print(val1)
+    else:
+        print(val2)
+\end{tcblisting}
+
+\newpage
+\section{Gemischt}
+\subsection{Counter und bool}
+Gegeben seien die Variable full vom Typ bool, die Variable counter und eine Konstante MAX (beide vom Typ int). Schreiben Sie eine Python Anweisung, die zu counter den Wert 3 addiert, falls full falsch und counter kleiner als MAX ist. Andernfalls wird counter auf 0 gesetzt.
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+full = False
+counter = 0
+MAX = 10
+
+while True:
+    if not full and counter < MAX:
+        counter += 3
+    else:
+        counter = 0
+        break
+\end{tcblisting}
+
+\subsection{while zu for Schleife}
+Schreiben Sie folgende while-Schleife in eine äquivalente for-Schleife um.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+i = 10
+while i >= 0:
+    print(i)
+    i -= 2
+
+for i in range(10, -1, -2):
+    print(i)
+\end{tcblisting}
+
+\subsection{Zufällige Liste erstellen und auftrennen}
+Gegeben seien eine Liste values, welche positive und negative Zahlen beinhaltet, sowie zwei leere Listen pos = [] und neg = []. Schreiben Sie mithilfe einer for-Schleife ein Code Fragment, so dass sich am Schluss in pos alle Werte aus values grösser-gleich 0 und in neg alle Werte kleiner als 0 befinden.
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import random
+
+values = random.sample(range(-100, 100), 20) # erstellen einer Liste mit 20 zufälligen Werten 
+pos = []
+neg = []
+
+for i in range(len(values)):
+    if values[i] >= 0:
+        pos.append(values[i])
+    else:
+        neg.append(values[i])
+\end{tcblisting}
+
+\subsection{Aufsummieren einer Liste mit threshold}
+Gegeben seien eine Liste values, welche Zahlen speichert, eine Variable total = 0 und eine Variable threshold. Schreiben Sie ein Code Fragment, das – solange die Summe total kleiner ist als threshold und es noch ungelesene Werte in values hat – die Werte aus values von vorne beginnend zu total addiert.
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+import random
+
+values = random.sample(range(-100, 100), 20)  # Erstellen einer Liste mit 20 zufälligen Werten
+total = 0
+threshold = 100
+index = 0
+
+while total < threshold and index < len(values):
+    total += values[index]
+    index += 1
+print(total)
+\end{tcblisting}
+
+\section{Funktionen mit Userinput}
+\begin{enumerate}[label=(\alph*)]
+    \item Schreiben Sie eine Funktion ohne Parameter, welche vom Benutzer zunächst eine Zahl \"uber die Tastatur einliest und danach alle geraden, ganzen Zahlen von 0 bis zu dieser Zahl (inklusive) ausgibt.
+    \item Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl x erwartet und danach eine Liste der Grösse x mit den Werten [1, 2, ..., x] generiert und zur\"uckgibt.
+    \item Schreiben Sie eine Funktion, welche eine Liste lst und einen Wert value entgegennimmt. Falls der Wert value noch nicht in lst vorhanden ist, wird dieser zu lst hinzugef\"ugt, andernfalls wird die Liste nicht verändert.
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+num = int(input("Geben sie eine Zahle ein: "))
+for i in range(0, num + 1, 2):
+    print(i)
+
+# (b)
+num = int(input("Geben Sie eine Zahl ein: "))
+lst = list(range(1, num + 1))
+print(lst)
+
+# (c)
+def is_in_list(lst, value):
+    if value not in lst:
+        lst.append(value)
+\end{tcblisting}
+
+\newpage
+\section{string-Manipulationen und Matrix}
+\begin{enumerate}[label=(\alph*)]
+    \item Schreiben Sie eine Funktion,welche eine Zeichenkette string entgegennimmt, in string alle Grossbuchstaben mit Kleinbuchstaben und alle Zeichen ‘c’ mit ‘k’ ersetzt. Die resultierende Zeichenkette soll zur\"uckgegeben werden.
+    \item Gegeben sei eine Datei data.txt, in der auf jeder Zeile ein Eintrag steht. Schreiben Sie eine Funktion namens dataContains(searchString), welche data.txt öffnet und danach \"uberpr\"uft, ob einer der Einträge in data.txt dem Parameter search-string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zur\"uck.
+    \item Schreiben Sie eine Funktion,welche eine zweidimensionale Liste matrix mit Zahlen entgegennimmt. Ihre Funktion gibt den maximalen Wert zur\"uck, der sich in matrix befindet.
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+def lowercase_and_c_to_k(input_string):
+    mod_string = input_string.replace("c", "k")
+    mod_string = mod_string.lower()
+    return mod_string
+
+# (b)
+def dataContains(search_string):
+    with open("data.txt", "r") as file:
+        for line in file:
+            if search_string in line:
+                return True
+    return False
+
+print(dataContains("Frog"))
+
+# (c)
+def max_matrix(matrix):
+    max = matrix[0][0] #festsetzten des ersten Wertes
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if matrix[i][j] > max:
+                max = matrix[i][j]
+    return max
+\end{tcblisting}
+
+\newpage
+\section{Gemischte Fragen, Grundlegendes}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Beurteilen Sie, ob folgende Aussagen jeweils wahr oder falsch sind:
+    
+    \begin{tabularx}{\textwidth}{ | X | c | }
+    \hline
+    In Python geschriebene Programme werden vor der Ausführung komplett kompiliert. & \textbf{falsch} \\
+    \hline
+    Objekte vom eingebauten Datentypen int oder str sind unveränderlich. & \textbf{wahr} \\
+    \hline
+    Die Ausgabe von: \newline
+    \hspace*{1cm}\texttt{title = "Python"} \newline
+    \hspace*{1cm}\texttt{print(title[-3:])} \newline
+    lautet: \texttt{hon} & \textbf{wahr} \\
+    \hline
+    Die Ausgabe von: \newline
+    \hspace*{1cm}\texttt{lst1 = [1]} \newline
+    \hspace*{1cm}\texttt{lst2 = lst1} \newline
+    \hspace*{1cm}\texttt{lst2 = [2]} \newline
+    \hspace*{1cm}\texttt{print(lst1)} \newline
+    lautet: \texttt{[1]} & \textbf{wahr} \\
+    \hline
+    \end{tabularx}
+    
+    \item Schreiben Sie den Kopf einer Funktion summe, welche einen obligatorischen und zwei optionale formale Parameter definiert (den beiden optionalen Parametern weisen Sie als Standardwert je den Wert 0 zu).
+    
+    \item Schreiben Sie ein Python Code-Fragment, das den Benutzer nach einer Gleitkommazahl fragt, die Eingabe einliest und diese einer Variablen vom Typ float zuweist. Mögliche Ein- und Ausgabe: \newline
+    \texttt{Wert eingeben: 7.1}
+    
+    \item Gegeben sind zwei Variablen num1 = 17.8 und num2 = 99.7. Schreiben Sie eine print Anweisung, welche die aktuellen Werte von num1 und num2 mithilfe von Ersatzfeldern ausgibt. Die Ausgabe soll so aussehen: \newline
+    \texttt{Messung 1 ist 17.8 und Messung 2 ist 99.7.}
+    
+    \item Gegeben sei ein Wörterbuch dct. Schreiben Sie ein Code-Fragment, das \"uberpr\"uft, ob der Schl\"ussel 17 im Wörterbuch vorhanden ist. Falls ja, soll "Schl\"ussel 17 vorhanden!" ausgegeben werden.
+\end{enumerate}
+
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (b)
+def summe(c, a=0, b=0, ):
+
+# (c)
+num = float(input("Wert eingeben: "))
+
+# (d)
+num1, num2 = 17.8, 99.7
+print(f"Messung 1 ist {num1} und Messung 2 ist {num2}.")
+
+# (e)
+dct = {12: "abc", 17: "def", 29: "ghi"}
+
+if 17 in dct:
+    print("Schlüssel 17 vorhanden!")
+\end{tcblisting}
+
+\newpage
+\section{Listenmanipultaionen}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Gegeben sei eine Funktion do\_something, welche eine ganze Zahl als formalen Parameter definiert (diese Funktion m\"ussen Sie nicht definieren). Rufen Sie die Funktion do\_something mit den tatsächlichen Parametern 1, 2, 3, ... , 1000 auf.
+    \item Gegeben sei eine Liste values,welche ganze Zahlen speichert (die Liste m\"ussen Sie nicht definieren). Solange die Liste values nicht leer ist, entfernen Sie ein zufälliges Element aus der Liste und geben dieses aus.
+    \item Gegeben sei eine Zeichenkette name (z.B. name = "Urs"). Schreiben Sie ein Code-Fragment, das jeden einzelnen Buchstaben und den zugehörigen Index auf je einer Zeile ausgibt. Also beispielsweise: \newline
+    \texttt{0 : U \newline
+    1 : r \newline
+    2 : s}
+    \item Gegeben sei eine Liste values = [1, 1]. Schreiben Sie ein Code-Fragment, das die Liste mit zehn weiteren Einträgen erweitert, so dass das Element an Position i>=2 die Summe der Elemente an Position i-1 und i-2 ist. Die Liste sollte also so aussehen: \texttt{[1, 1, 2, 3, 5, 8, ...]}
+\end{enumerate}
+
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+for i in list(range(1, 1000 + 1)):
+    do_something(i)
+
+# (b)
+import random
+while len(values) > 0:
+    values.pop(random.randint(0, len(values) - 1)) # -1 damit Grenze nicht unterschritten wird
+
+# (c)
+wort = "Urs"
+for i in range(len(wort)):
+    print(f"{i} : {wort[i]}")
+
+# (d)
+values = [1, 1]
+while len(values) < 100: #Bedingung damit keine Endlosschlaufe entsteht
+    values.append(values[-1] + values[-2])
+\end{tcblisting}
+
+\section{Mathematische Funktionen und statistik über Datei}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Schreiben Sie eine Funktion \texttt{func}, welche zwei Gleitkommazahlen a und b als Parameter erwartet, den Term $\frac{a^2 + b}{b + 1}$ berechnet und diesen zur\"uckgibt.
+    \item Schreiben Sie eine Funktion compare\_to, welche zwei Gleitkommazahlen f1 und f2 als Parameter erwartet: Falls die beiden Werte identisch sind, gibt Ihre Funktion 0 zur\"uck, ist der erste Parameter f1 grösser als f2, gibt Ihre Funktion 1 und sonst -1 zur\"uck.
+    \item Schreiben Sie eine Funktion reset\_list, die eine Liste lst als Parameter erwartet. Ihre Funktion ersetzt jeden vorhandenen Wert in der Liste mit dem Wert 0.
+    \item Ihre Aufgabe ist es:
+    \begin{enumerate}[label=(\alph*)]
+        \item Numerische Daten aus der Datei data.txt einzulesen
+        \item Auf den eingelesenen Daten den Mittelwert m und die Standardabweichung s zu berechnen
+        \item Jedes Element x aus den Daten mit der Formel x- ms zu normieren.
+        \item Die Liste mit den normierten Daten auszugeben. \newline
+        Hierzu stehen Ihnen die Funktionen mean\_std\_dev, normalize und fill\_list zur Verf\"ugung – nutzen Sie diese Funktionen f\"ur Ihr Python Programm.
+    \end{enumerate}
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+def func(a, b):
+    value = (a ** 2 + b) / (b + 1)
+    return value
+
+# (b)
+def compare_to(f1, f1):
+    if f1 == f2:
+        return 0
+    elif f1 > f2:
+        return 1
+    else:
+        return -1
+    
+# (c)
+def reset_list(lst):
+    for i in range(len(lst)):
+        lst[i] = 0
+
+# (d)
+import statistics
+
+def mean_std_dev(data):
+    return statistics.mean(data), statistics.stdev(data)
+
+def normalize(data, m, s):
+    normalized_data = []
+    for val in data:
+        normalized_data.append((val - m) / s)
+    return normalized_data
+
+def fill_list():
+    lst = []
+    with open("data.txt", "r") as file:
+        for line in file:
+            lst.append(float(line.strip("\n")))
+    return lst
+
+values = fill_list()
+mean, stdev = mean_std_dev(values)
+
+normalized_data = normalize(values, mean, stdev)
+
+print(normalized_data)
+\end{tcblisting}
+
+\newpage
+\section{list\_splitting und multiply into table}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Schreiben Sie eine Funktion \texttt{list\_splitting}, die eine Liste lst und eine ganze Zahl \texttt{split\_index} als Parameter erwartet. Die Funktion teilt Ihre Liste in zwei Teillisten lst1 und lst2 auf, so dass in lst1 die ersten \texttt{split\_index} Elemente und in lst2 die restlichen Elemente gespeichert sind. Also beispielsweise: \newline
+    \texttt{values = [2, 4, 5, 1, 9] und split\_index = 3 \newline
+    -> lst1 = [2, 4, 5], lst2 = [1, 9]} \newline
+    Ihre Funktion gibt beide Teillisten zur\"uck. Behandeln Sie den folgenden Fall: Falls der Parameter \texttt{split\_index} grösser ist als die Länge der Liste lst, entspricht lst1 der urspr\"unglichen Liste lst und lst2 ist eine leere Liste.
+    \item Schreiben Sie eine Funktion multiply, die zwei Listen vals1 und vals2 als Parameter erwartet. Die Funktion erstellt eine zweidimensionale Liste table, so dass in der i-ten Zeile und j-ten Spalte das Resultat von vals1[i] * vals2[j] gespeichert wird. Also beispielsweise: \newline
+    \texttt{vals1 = [2, 5] und vals2 = [5, 6, 1] \newline
+    -> table = [[10, 12, 2], [25, 30, 5]]} \newline
+    Ihre Funktion gibt die zweidimensionale Liste table zur\"uck.
+\end{enumerate}
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+# (a)
+def list_splitting(lst, split_index):
+    lst1 = []
+    lst2 = []
+    for i in range(len(lst)):
+        if i < split_index:
+            lst1.append(lst[i])
+        else:
+            lst2.append(lst[i])
+    return lst1, lst2
+
+values = [2, 4, 5, 1, 9] 
+split_index = 3
+
+lst1, lst2 = list_splitting(values, split_index)
+
+print(values, lst1, lst2, sep="\n")
+# Output:
+# [2, 4, 5, 1, 9]
+# [2, 4, 5]
+# [1, 9]
+
+# (b)
+def multiply(vals1, vals2):
+    table = []
+    for i in range(len(vals1)):
+        row = []
+        for j in range(len(vals2)):
+            row.append(vals1[i] * vals2[j])
+        table.append(row)
+    return table
+
+vals1 = [2, 5]
+vals2 = [5, 6, 1]
+print(multiply(vals1, vals2))
+# Output:
+# [[10, 12, 2], [25, 30, 5]]
+\end{tcblisting}
+
+\doclicenseThis
+
+\end{document}
+
+% Vorlage für weitere Aufgaben
+
+\section{Aufgabe X}
+
+\begin{enumerate}[label=(\alph*)]
+    \item 
+\end{enumerate}
+
+
+\begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
+
+\end{tcblisting}
