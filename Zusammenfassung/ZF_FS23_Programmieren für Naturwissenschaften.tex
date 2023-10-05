@@ -42,6 +42,14 @@
 ]{doclicense}
 \lstset{inputencoding=utf8/latin1}
 
+\usepackage{fontawesome5}
+
+\makeatletter
+\newcommand{\github}[1]{%
+   \href{#1}{\faGithubSquare}%
+}
+\makeatother
+
 \DeclareUnicodeCharacter{00FC}{\"u} % Für das Zeichen ü
 \DeclareUnicodeCharacter{00F6}{\"o} % Für das Zeichen ö
 \DeclareUnicodeCharacter{00E4}{\"a} % Für das Zeichen ä
@@ -104,7 +112,18 @@
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \begin{center}
+        {\LARGE Programmieren für Naturwissenschaften}\\[0.5cm]
+        {\large PD Dr. Kaspar Riesen}\\[0.3cm]
+        {\LARGE Zusammenfassung \& Musterlösung Wiederholungsserie}\\[0.5cm]
+        {\large FS 2023}\\[2cm]
+        {\large Lukas Batschelet}\\[0.3cm]
+    \end{center}
+    \vfill % Fügt vertikalen Abstand ein, um den Text nach unten zu verschieben
+    \noindent \github{https://github.com/lbatschelet/23FS_PN} Sämtliches Material ist auch auf GitHub abgelegt: \href{https://github.com/lbatschelet/23FS_PN}{https://github.com/lbatschelet/23FS\_PN}
+    \doclicenseThis
+\end{titlepage}
 
 \tableofcontents
 
@@ -1082,8 +1101,6 @@ print(multiply(vals1, vals2))
 # Output:
 # [[10, 12, 2], [25, 30, 5]]
 \end{tcblisting}
-
-\doclicenseThis
 
 \end{document}
 
