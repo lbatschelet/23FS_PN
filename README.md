@@ -7,6 +7,7 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 - Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist
 - Excel Übungsserien 1-4 (leider unkommentiert)
 - Python Übungsserien 5-11
+    - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
 - Alle gelösten Aufgaben der Wiederholungsserie Python
 - Alle Aufgabenblätter
 
