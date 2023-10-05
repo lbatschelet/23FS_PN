@@ -14,7 +14,7 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 
 ## Lizenz
 
-Dieses Werk ist lizenziert unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Dieses Projekt ist lizenziert unter einer [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Lizenz](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
