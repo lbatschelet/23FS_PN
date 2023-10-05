@@ -7,6 +7,7 @@ Diese Zusammenfassung deckt den in der Vorlesung "Programmieren für Naturwissen
 ## Bearbeitung
 
 Keine Sorge, wenn du wenig Erfahrung mit LaTeX oder Programmierung hast. Die LaTeX Datei ist so gestaltet, dass sie wenn immer möglich leicht verständlich und bearbeitbar ist. Falls du Fragen hast oder auf Schwierigkeiten stösst, sind Tools wie ChatGPT. (Ich habe die Zusammenfassung praktisch komplett mit ChatGPT formatiert, und so schritt für schritt noch LaTeX gelernt). 
+
 Als Editor empfehle ich [Overleaf](https://overleaf.com), eine Online-Latex-Editor-Plattform.
 
 ## Inhaltsverzeichnis
