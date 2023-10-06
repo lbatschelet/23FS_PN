@@ -16,6 +16,9 @@ Als **Editor** empfehle ich [Overleaf](https://overleaf.com), eine Online-Latex-
 - Python: Datentypen, grundlegende Funktionen, Methoden
 - Wiederholungsserie: Verschiedene Übungen und Beispiele
 
+## Disclaimer
+
+Diese Zusammenfassung wurde von Studierenden verfasst und ist nicht offiziell von der Universität Bern oder den Dozierenden des Kurses autorisiert oder geprüft. Obwohl wir unser Bestes geben, die Informationen so genau und vollständig wie möglich bereitzustellen, gibt es keine Garantie für die Vollständigkeit oder Fehlerfreiheit des Materials. Benutze diese Zusammenfassung auf eigene Gefahr und ziehe bei Unklarheiten immer die offiziellen Kursmaterialien oder die Dozierenden zurate.
 
 ## Lizenz
 
