@@ -4,7 +4,7 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 
 ## Inhalt
 
-- Ein [Forum](https://github.com/lbatschelet/Programmieren-fuer-Naturwissenschaften/discussions)
+- [Ein Forum](https://github.com/lbatschelet/Programmieren-fuer-Naturwissenschaften/discussions)
 - [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](Zusammenfassung/ZF_FS23_Programmieren_für_Naturwissenschaften.pdf)
 - [Excel Übungsserien 1-4 (leider unkommentiert)](Serien/Excel_Uebungsserien)
 - [Python Übungsserien 5-11](Serien/Python_Uebungsserien)
