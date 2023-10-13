@@ -38,3 +38,8 @@ Dieses Projekt lebt von der Gemeinschaft – also von dir! Wir haben hier bereit
 Schau dir für mehr Details die [`CONTRIBUTE.md`](CONTRIBUTE.md) im Repository an.
 
 Lass uns dieses Projekt gemeinsam zu einer immer besseren Ressource machen! 🚀
+
+
+Ich veröffentliche meine Zusammenfassungen und Serien gerne einfach so. Wenn du dich trotzdem mit einem Kaffee bedanken willst, kannst du das hier tun.
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Trinkgeld für ein Kaffee', '#29abe0', 'G2G8Q36FV');kofiwidget2.draw();</script> 
