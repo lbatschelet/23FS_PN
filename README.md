@@ -4,7 +4,7 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 
 ## Inhalt
 
-- [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](ZF_FS23_Programmieren-für-Naturwissenschaften.pdf)
+- [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](Zusammenfassung/ZF_FS23_Programmieren für Naturwissenschaften.pdf)
 - Excel Übungsserien 1-4 (leider unkommentiert)
 - Python Übungsserien 5-11
     - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
