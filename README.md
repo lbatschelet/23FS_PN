@@ -11,9 +11,6 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
     - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
 - [Alle gelösten Aufgaben der Wiederholungsserie Python](Wiederholungsserie_zur_Prüfungsvorbereitung)
 - [Alle Aufgabenblätter](Serien/Aufgabenblätter)
-- Die beiden Skripte zur Vorlesung
-    - [Das Skript zum Teil Excel](Skripte/Skript_Excel.pdf)
-    - [Das Skript zum Teil Python](Skripte/Skript_Python.pdf)
 - [Eine Anleitung zum bearbeiten und Weiterführen dieses Repositorys](CONTRIBUTE.md)
 
 > [!WARNING]
