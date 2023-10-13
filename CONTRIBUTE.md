@@ -24,4 +24,4 @@ Vielen Dank für dein Interesse, zum Projekt beizutragen! Da viele Contributors 
 
 ## Unterstützung
 
-Bei Fragen oder Schwierigkeiten, zögere nicht, dich in den [Discussions](discussions)
+Bei Fragen oder Schwierigkeiten, zögere nicht, dich in den [Discussions](https://github.com/lbatschelet/Programmieren-fuer-Naturwissenschaften/discussions)
