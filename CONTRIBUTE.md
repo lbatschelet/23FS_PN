@@ -24,5 +24,4 @@ Vielen Dank für dein Interesse, zum Projekt beizutragen! Da viele Contributors 
 
 ## Unterstützung
 
-Bei Fragen oder Schwierigkeiten, zögere nicht, dich in den [Discussions](Discussions) zu melden.
-
+Bei Fragen oder Schwierigkeiten, zögere nicht, dich in den [Discussions](discussions)
