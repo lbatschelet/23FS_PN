@@ -42,4 +42,4 @@ Lass uns dieses Projekt gemeinsam zu einer immer besseren Ressource machen! 🚀
 
 Ich veröffentliche meine Zusammenfassungen und Serien gerne einfach so. Wenn du dich trotzdem mit einem Kaffee bedanken willst, kannst du das hier tun.
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Trinkgeld für ein Kaffee', '#29abe0', 'G2G8Q36FV');kofiwidget2.draw();</script> 
+<a href='https://ko-fi.com/lbatschelet' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Trinkgeld für ein Kaffee' />
