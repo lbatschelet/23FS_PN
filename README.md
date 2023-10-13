@@ -5,11 +5,15 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 ## Inhalt
 
 - [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](Zusammenfassung/ZF_FS23_Programmieren_für_Naturwissenschaften.pdf)
-- Excel Übungsserien 1-4 (leider unkommentiert)
-- Python Übungsserien 5-11
+- [Excel Übungsserien 1-4 (leider unkommentiert)](Serien/Excel_Uebungsserien)
+- [Python Übungsserien 5-11](Serien/Python_Uebungsserien)
     - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
-- Alle gelösten Aufgaben der Wiederholungsserie Python
-- Alle Aufgabenblätter
+- [Alle gelösten Aufgaben der Wiederholungsserie Python](Wiederholungsserie_zur_Prüfungsvorbereitung)
+- [Alle Aufgabenblätter](Serien/Aufgabenblätter)
+- Die beiden Skripte zur Vorlesung
+    - [Das Skript zum Teil Excel](Skripte/Skript_Excel.pdf)
+    - [Das Skript zum Teil Python](Skripte/Skript_Python.pdf)
+- [Eine Anleitung zum bearbeiten und Weiterführen dieses Repositorys](CONTRIBUTE.md)
 
 > [!WARNING]
 > Sämtliches Material (exkl. Skripte und Aufgabenblätter für die Serien) wurde von Studierenden verfasst und ist nicht offiziell von der Universität Bern oder den Dozierenden des Kurses autorisiert oder geprüft. Obwohl wir unser Bestes geben, die Informationen so genau und vollständig wie möglich bereitzustellen, gibt es keine Garantie für die Vollständigkeit oder Fehlerfreiheit des Materials. Benutze dieses Material auf eigene Gefahr und ziehe bei Unklarheiten immer die offiziellen Kursmaterialien oder die Dozierenden zurate.
