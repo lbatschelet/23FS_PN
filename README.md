@@ -1,10 +1,10 @@
 # Programmieren für Naturwissenschaften
 
-Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwissenschaften" an der Universität Bern, geleitet von PD Dr. Kaspar Riesen.
+Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwissenschaften" an der Universität Bern, geleitet von PD Dr. Kaspar Riesen. Das bisherige Material stammt aus der Druchführung im **Frühlingssemester 2023**
 
 ## Inhalt
 
-- Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist
+- [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](ZF_FS23_Programmieren-für-Naturwissenschaften.pdf)
 - Excel Übungsserien 1-4 (leider unkommentiert)
 - Python Übungsserien 5-11
     - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
