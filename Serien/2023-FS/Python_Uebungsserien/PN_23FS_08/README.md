@@ -50,7 +50,7 @@
 
 ## Aufgabe 3: Standardmodul `statistics`
 
-> Sehen Sie sich den Datensatz aus der Datei [`passagierfrequenz.csv`](passagierfrequenz.csv) genauer an. Die Daten stammen von dem Open Data Angebot der SBB und können unter https://data.sbb.ch/pages/home/ heruntergeladen werden. Die Bezeichnungen sind wie folgt definiert:
+> Sehen Sie sich den Datensatz aus der Datei [`passagierfrequenz.csv`](PN_23FS_08/passagierfrequenz.csv) genauer an. Die Daten stammen von dem Open Data Angebot der SBB und können unter https://data.sbb.ch/pages/home/ heruntergeladen werden. Die Bezeichnungen sind wie folgt definiert:
 > 
 > - DTV = Durchschnittlicher täglicher Verkehr (Montag bis Sonntag) im Jahr 2018.
 > - DWV = Durchschnittlicher werktäglicher Verkehr (Montag bis Freitag) im Jahr 2018.
