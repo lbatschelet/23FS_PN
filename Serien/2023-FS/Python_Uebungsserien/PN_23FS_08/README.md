@@ -48,7 +48,7 @@
 
 </details>
 
-## Aufgabe 3: Standardmodlu `statistics`
+## Aufgabe 3: Standardmodul `statistics`
 
 > Sehen Sie sich den Datensatz aus der Datei `passagierfrequenz.csv` genauer an. Die Daten stammen von dem Open Data Angebot der SBB und können unter https://data.sbb.ch/pages/home/ heruntergeladen werden. Die Bezeichnungen sind wie folgt definiert:
 > 
