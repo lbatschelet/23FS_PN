@@ -1,4 +1,4 @@
-# Serie 06
+# Serie 6: Variablen und Listen
 
 > **Programmieren für Naturwissenschaften FS 2023**
 > Gruppe: Sofia Kessler, Florian Mohaupt, Lukas Batschelet

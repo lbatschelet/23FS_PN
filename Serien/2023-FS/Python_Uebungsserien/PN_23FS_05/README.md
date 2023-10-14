@@ -1,10 +1,8 @@
-# Serie 05
-
+# Serie 5: Einführung und Motivation
 
 > **Programmieren für Naturwissenschaften FS 2023**
 > 
 > Gruppe: Sofia Kessler, Florian Mohaupt, Lukas Batschelet
-
 
 ## Aufgabe 1: Hello World
 
@@ -58,7 +56,6 @@ Alles klar? Ja!
 ```
 
 </details>
-
 
 ## Aufgabe 3: Rechnung
 
