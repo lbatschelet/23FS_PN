@@ -19,7 +19,7 @@
 print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python zu lernen!", sep="\n")
 ```
 
-[S5A1.py](Serien/Python_Uebungsserien/Serie05/S5A1.py)
+[S5A1.py](S5A1.py)
 
 ### Aufgabe 2:
 
