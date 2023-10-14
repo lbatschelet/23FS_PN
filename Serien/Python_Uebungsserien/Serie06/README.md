@@ -97,7 +97,6 @@ print(numbers)
 
 ## Aufgabe 4:
 
-> [!Aufgabe]
 > Betrachten Sie die Liste values in folgender Abbildung:
 > 
 > | values | -1  | 99  | 7   | 7   | 4   | 3   | 4   | 5   | 8   |
