@@ -22,7 +22,7 @@
 print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python zu lernen!", sep="\n")
 ```
 
-[Zum vollen Quellcode](S5A1.py)
+[Kompletter Quellcode](S5A1.py)
 
 </details>
 
@@ -75,7 +75,7 @@ print("3 * (2^5 + 17)^2 =", end=" ")
 print(3 * (2 ** 5 + 17) ** 2)
 ```
 
-[Zum vollen Quellcode](S5A3.py)
+[Kompletter Quellcode](S5A3.py)
 
 </details>
 
@@ -138,7 +138,7 @@ a + ((b * c) + (d / e))
 a = (a + ((b * c) + (d / e)))
 ```
 
-- Zeile 64: `a = b + c + d * e`
+- Zeile 6: `a = b + c + d * e`
 
 ```python
 d * e
@@ -155,7 +155,7 @@ a = ((b + c) + (d * e))
 > https://docs.python.org/3/library/functions.html
 
 <details>
-	<summary> Lösung anziegen</summary>
+	<summary> Beispielhafte Lösung anziegen</summary>
 
 ### Die `range()` Funktion in Python
 
