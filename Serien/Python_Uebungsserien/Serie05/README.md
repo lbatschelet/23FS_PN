@@ -2,6 +2,7 @@
 
 
 > **Programmieren für Naturwissenschaften FS 2023**
+> 
 > Gruppe: Sofia Kessler, Florian Mohaupt, Lukas Batschelet
 
 
@@ -15,37 +16,68 @@
 > Zusatzaufgabe: Schaffen Sie es, die zweizeilige Ausgabe mit einer einzigen print Anweisung zu erzeugen?
 
 <details>
-	<summary> Klicke hier um die Lösung anzuzeigen.</summary>
+	<summary> Lösung anziegen</summary>
 
 ```python
 print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python zu lernen!", sep="\n")
 ```
 
-[S5A1.py](S5A1.py)
+[Zum vollen Quellcode](S5A1.py)
 
 </details>
 
-### Aufgabe 2:
+## Aufgabe 2:
 
-	a)
-	"# gibt Hallo aus" gibt keine neue Information welche nicht sofort aus dem Programm klar wird.
+> - **a)** Begründen Sie, weshalb die folgenden zwei Kommentare nicht optimal sind:
+>
+> ```python
+> print("Hallo") # gibt Hallo aus
+> print("test") # muss später geändert werden
+> ```
 
-	"# muss später geändert werden" unklar, was wann geändert werden muss
+<details>
+	<summary> Lösung anziegen </summary>
+- `# gibt Hallo aus` gibt keine neue Information welche nicht sofort aus dem Programm klar wird.
+- `# muss später geändert werden` erklärt nicht, was, wann, wo und weshalb etwas geändert werden muss.
+
+</details>
+
+> **b)** Welche Ausgabe erzeugen die folgenden zwei Anweisungen, wenn diese im Skript-Modus ausgeführt werden (Hinweis: `"\n"` repräsentiert das Zeilenumbruchzeichen)?
+> ```python
+> print("Hallo", "Python!", "Alles klar?", sep="\n", end=" ")
+> print("Ja!")
+> ```
+
+<details>
+	<summary> Lösung anziegen</summary>
+
+```python
+Hallo
+Python!
+Alles klar? Ja!
+```
+
+</details>
 
 
-	b)
-	print("Hallo", "Python!", "Alles klar?", sep="\n", end=" ")
-	print("Ja!")
+## Aufgabe 3: Rechnung
 
-	=>
+> Schreiben Sie ein Programm, das den arithmetischen Ausdruck $3 \cdot (2^5 +17)^2$ ausrechnet und das Resultat der Berechnung folgendermassen ausgibt:
+> ```python
+> 3 * (2^5 + 17)^2 = 7203
+>```
 
-	Hallo
-	Python!
-	Alles klar? Ja!
+<details>
+	<summary> Lösung anziegen</summary>
 
-Aufgabe 3: 
+```python
+print("3 * (2^5 + 17)^2 =", end=" ")
+print(3 * (2 ** 5 + 17) ** 2)
+```
 
-S5A3.py
+[Zum vollen Quellcode](S5A3.py)
+
+</details>
 
 Aufgabe 4:
 
