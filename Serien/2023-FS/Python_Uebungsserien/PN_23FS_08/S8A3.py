@@ -8,7 +8,20 @@ Aufgabe: 3
 
 import statistics
 
-import os
+"""
+Der import der Datei sollte lokal einfacher funktionieren, als in diesem Fall.
+Dies ist nur so formuliert, dass das Programm auf einem fremden PC auch funktioniert.
+Einzige Bedingung ist, dass das Programm und die Datei im selben Ordner sind.
+
+Einfachere Variante:
+file_name = "passagierfrequenz.csv"
+
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+"""
+
+import os # Betriebssystem-Funktionen importieren
 
 # Pfad zum Ordner des aktuellen Skripts
 script_dir = os.path.dirname(os.path.realpath(__file__))

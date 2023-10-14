@@ -11,4 +11,4 @@ produkt = 1
 for i in range(1, number+1):
     produkt *= i
 
-print("Fakultät dieser Zahl: ", produkt  )
+print("Fakultät dieser Zahl: ", produkt)

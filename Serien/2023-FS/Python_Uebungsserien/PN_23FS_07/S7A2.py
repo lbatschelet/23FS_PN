@@ -9,7 +9,8 @@ another = "y"
 while another == "y" or another == "Y":
     alter_summe = 0
     count = 0
-    print("Dieses Programm rechnet ihnen das Durchschnittsalter einer Gruppe aus. Geben sie das alter der Personen einzeln ein. Beenden können Sie das Programm mit der Eingabe 0")
+    print("Dieses Programm rechnet ihnen das Durchschnittsalter einer Gruppe aus.")
+    print("Geben sie das alter der Personen einzeln ein. Beenden können Sie das Programm mit der Eingabe 0")
     alter_neu = int(input("Geben Sie das Alter eines Studierenden oder einer Studierenden ein: "))
     while alter_neu > 0:
         count += 1

@@ -11,4 +11,4 @@ produkt = 1
 while number > 0:
     produkt *= number
     number -= 1
-print(produkt)
+print("Fakultät dieser Zahl: ", produkt)
