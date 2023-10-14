@@ -26,7 +26,7 @@ print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python
 
 </details>
 
-## Aufgabe 2:
+## Aufgabe 2: Kommentare und Skript-Modus
 
 > **a)** Begründen Sie, weshalb die folgenden zwei Kommentare nicht optimal sind:
 >
@@ -79,74 +79,146 @@ print(3 * (2 ** 5 + 17) ** 2)
 
 </details>
 
-Aufgabe 4:
+## Aufgabe 4: Operationenhierarchie
 
-	Zeile 1:
-		a + b
-		(a + b) + c
-		((a + b) + c) + d
-		(((a + b) + c) + d) + e
-	Zeile 2:
-		b * c
-		d / e
-		a + (b * c)
-		(a + (b * c)) - (d / e)
-	Zeile 3:
-		b + c
-		a / (b + c)
-		d % e
-		(a / (b + c)) - (d % e)
-	Zeile 4:
-		d - e
-		c + (d - e)
-		b * (c + (d - e))
-		a / (b * (c + (d - e)))
-	Zeile 5:
-		b * c
-		d / e
-		(b * c) + (d / e)
-		a + ((b * c) + (d / e))
-		a = (a + ((b * c) + (d / e)))
-	Zeile 6:
-		d * e
-		b + c
-		(b + c) + (d * e)
-		a = ((b + c) + (d * e))
+> Geben Sie für die folgenden Ausdrücke jeweils an, in welcher Reihenfolge die einzelnen Operationen durchgeführt werden.
+> - `a + b + c + d + e`
+> - `a + b * c - d / e`
+> - `a / (b + c) - d % e`
+> - `a / (b * (c + (d - e)))`
+> - `a += b * c + d / e`
+> - `a = b + c + d * e`
 
-Aufgabe 5:
+<details>
+	<summary> Lösung anziegen</summary>
 
-Funktion range()
+- Zeile 1: `a + b + c + d + e`
 
-Die Funktion range() erstellt eine Liste von Werten in einem bestimmten Intervall
+```python
+a + b
+(a + b) + c
+((a + b) + c) + d
+(((a + b) + c) + d) + e
+```
 
-Die Werte können mit diesem Code angezeigt werden:
+- Zeile 2: `a + b * c - d / e`
 
-	for x in range():
-		print(x)
+```python
+b * c
+d / e
+a + (b * c)
+(a + (b * c)) - (d / e)
+```
 
-range(5) Setzt eine Obergrenze, welche selber nicht mehr in den Werten vorkommt und erstellt bspw. folgende Werte:
+- Zeile 3: `a / (b + c) - d % e`
 
-	0
-	1
-	2
-	3
-	4
+```python
+b + c
+a / (b + c)
+d % e
+(a / (b + c)) - (d % e)
+```
 
-range(5, 10) setzt eine Untergrenze sowie eine obergrenze fest. Folgende Werte werden erstellt
+- Zeile 4: `a / (b * (c + (d - e)))`
 
-	5
-	6
-	7
-	8
-	9
+```python
+d - e
+c + (d - e)
+b * (c + (d - e))
+a / (b * (c + (d - e)))
+```
 
-range(10, 21, 2) setzt neben der ober- und Untergrenze auch ein Step. Es werden folgende Werte erstellt
+- Zeile 5: `a += b * c + d / e`
 
-	10
-	12
-	14
-	16
-	18
-	20
+```python
+b * c
+d / e
+(b * c) + (d / e)
+a + ((b * c) + (d / e))
+a = (a + ((b * c) + (d / e)))
+```
+
+- Zeile 64: `a = b + c + d * e`
+
+```python
+d * e
+b + c
+(b + c) + (d * e)
+a = ((b + c) + (d * e))
+```
+
+</details>
+
+## Aufgabe 5: Eingebaute Funktionen
+
+> Die Funktion `print` ist ein Beispiel einer sogenannt *eingebauten Funktion*. Geben Sie ein weiteres Beispiel einer eingebauten Funktionen an und beschreiben Sie kurz, was diese tut. Machen Sie sich hierzu mit der Dokumentation von Python vertraut:
+> https://docs.python.org/3/library/functions.html
+
+<details>
+	<summary> Lösung anziegen</summary>
+
+### Die `range()` Funktion in Python
+
+Die `range()` Funktion in Python erzeugt eine Sequenz von Zahlen. Diese Sequenz kann zum Beispiel in `for`-Schleifen verwendet werden. Die Funktion kann bis zu drei Parameter annehmen, die das Verhalten der erzeugten Sequenz steuern.
+
+#### Grundlegende Verwendung
+
+Mit `range(5)` erzeugen Sie eine Sequenz von Zahlen von 0 bis 4:
+
+```python
+for x in range(5):
+    print(x)
+```
+
+Ausgabe:
+
+```python
+0
+1
+2
+3
+4
+```
+
+#### Anfang und Ende festlegen
+
+Durch die Verwendung von zwei Parametern können Sie einen Start- und einen Endwert für die Sequenz festlegen:
+
+```python
+for x in range(5, 10):
+    print(x)
+```
+Ausgabe:
+
+```python
+5
+6
+7
+8
+9
+```
+
+#### Schrittgröße angeben
+
+Ein dritter Parameter legt die Schrittgröße zwischen den Zahlen in der Sequenz fest:
+
+```python
+for x in range(10, 21, 2):
+    print(x)
+```
+
+Ausgabe:
+
+```python
+10
+12
+14
+16
+18
+20
+```
+
+</details>
+
 
 
