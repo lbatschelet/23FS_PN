@@ -28,7 +28,7 @@ print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python
 
 ## Aufgabe 2:
 
-> - **a)** Begründen Sie, weshalb die folgenden zwei Kommentare nicht optimal sind:
+> **a)** Begründen Sie, weshalb die folgenden zwei Kommentare nicht optimal sind:
 >
 > ```python
 > print("Hallo") # gibt Hallo aus
@@ -62,7 +62,7 @@ Alles klar? Ja!
 
 ## Aufgabe 3: Rechnung
 
-> Schreiben Sie ein Programm, das den arithmetischen Ausdruck $3 \cdot (2^5 +17)^2$ ausrechnet und das Resultat der Berechnung folgendermassen ausgibt:
+> Schreiben Sie ein Programm, das den arithmetischen Ausdruck 3 &middot; (2<sup>5</sup> + 17)<sup>2</sup> ausrechnet und das Resultat der Berechnung folgendermassen ausgibt:
 > ```python
 > 3 * (2^5 + 17)^2 = 7203
 >```
