@@ -36,10 +36,3 @@ Dieses Projekt lebt von der Gemeinschaft – also von dir! Wir haben hier bereit
 4. **Review und Merge**: Nach einer Überprüfung können deine Beiträge in das Hauptprojekt integriert werden.
 
 Schau dir für mehr Details die [`CONTRIBUTE.md`](CONTRIBUTE.md) im Repository an.
-
-Lass uns dieses Projekt gemeinsam zu einer immer besseren Ressource machen! 🚀
-
-
-Ich veröffentliche meine Zusammenfassungen und Serien gerne einfach so. Wenn du dich trotzdem mit einem Kaffee bedanken willst, kannst du das hier tun.
-
-<a href='https://ko-fi.com/lukasbatschelet' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Trinkgeld für ein Kaffee' />
