@@ -138,7 +138,7 @@ print(name_max, "ist die Station mit dem höchsten DTV, und zwar: \t", max_dtv)
 print(name_min, "ist die Station mit dem geringsten DTV, und zwar: \t", min_dtv)
 ```
 
-[Vollständiger Quellcode](S8A3.py)
-[passagierdaten.csv](passagierdaten.csv)
+- [Vollständiger Quellcode](S8A3.py)
+- [passagierdaten.csv](passagierdaten.csv)
 
 </details>
