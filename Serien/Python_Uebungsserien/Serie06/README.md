@@ -41,9 +41,9 @@ f = 2.0 # float
 ### Aufgabe 2: Notenberechnung
 
 > Schreiben Sie ein Programm, welches vom Benutzer die maximal möglichen und die tatsächlich erreichten Punkte einer Prüfung einliest (*m* und *e*). Danach berechnen Sie anhand der Formel
-> 
-> ![Formel](Serie06/Notenformel.png)
-> 
+
+![Formel](Serie06/Notenformel.png)
+
 > die *Note* und geben diese auf zwei Nachkommastellen gerunden aus (hierzu können Sie die eingebaute Funktion `round` verwenden).
 
 <details>
