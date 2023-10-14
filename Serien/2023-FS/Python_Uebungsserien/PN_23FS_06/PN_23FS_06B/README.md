@@ -48,7 +48,7 @@ a = e + f - c
 a = 12 + 6.0 - 0
 a = 18.0 # float
 ```
-
+[Kompletter Quellcode zum überprüfen](S6BA1.py)
 </details>
 
 ## Aufgabe 2: Listenmanipulationen
@@ -119,4 +119,5 @@ print("Radius =", radius)
 print("Fläche =", round(area, 2))
 print("Umfang =", round(scope, 2))
 ```
+[Kompletter Quellcode](S6BA3.py)
 </details>
