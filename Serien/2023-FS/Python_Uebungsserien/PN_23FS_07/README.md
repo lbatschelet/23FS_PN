@@ -45,6 +45,7 @@ while number > 0:
     produkt *= number
     number -= 1
 print("Fakultät dieser Zahl: ", produkt)
+```
 
 </details>
 
