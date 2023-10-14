@@ -1,9 +1,25 @@
-# Serie 5
-## Programmieren für Naturwissenschaften FS 2023
-### Gruppe: Sofia Kessler, Florian Mohaupt, Lukas Batschelet
-### Aufgabe 1: 
+# Serie 05
 
-S5A1.py
+
+> **Programmieren für Naturwissenschaften FS 2023**
+> Gruppe: Sofia Kessler, Florian Mohaupt, Lukas Batschelet
+
+
+## Aufgabe 1: Hello World
+
+> Schreiben Sie ein Programm, welches folgende Ausgabe generiert (ersetzen Sie dabei [Ihr Name] mit Ihrem Namen):
+> ```
+> Hallo, mein Name ist [Ihr Name].
+> Ich freue mich, Python zu lernen!
+> ```
+> Zusatzaufgabe: Schaffen Sie es, die zweizeilige Ausgabe mit einer einzigen print Anweisung zu erzeugen?
+
+
+```python
+print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python zu lernen!", sep="\n")
+```
+
+[S5A1.py](Serien/Python_Uebungsserien/Serie05/S5A1.py)
 
 ### Aufgabe 2:
 
