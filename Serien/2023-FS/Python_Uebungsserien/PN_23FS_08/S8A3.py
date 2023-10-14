@@ -8,7 +8,22 @@ Aufgabe: 3
 
 import statistics
 
-file_name = "Programmieren/Python/PN_FS23/Serie8/passagierfrequenz.csv"
+import os
+
+# Pfad zum Ordner des aktuellen Skripts
+script_dir = os.path.dirname(os.path.realpath(__file__))
+
+# Dateiname
+file_name = "passagierfrequenz.csv"
+
+# Vollständiger Pfad zur Datei
+file_path = os.path.join(script_dir, file_name)
+
+# Datei lesen
+with open(file_path, "r") as file:
+    content = file.read()
+    print(content)
+
 
 # leere listen für die werte aus der Datei erstellen
 dtv_values = []
@@ -16,7 +31,7 @@ dwv_values = []
 dnwv_values = []
 name_values = []
 
-with open(file_name, "r") as file:
+with open(file_path, "r") as file:
     # Die erste Zeile lesen (Header)
     header_line = file.readline()
     # Header-Zeile am Komma aufteilen

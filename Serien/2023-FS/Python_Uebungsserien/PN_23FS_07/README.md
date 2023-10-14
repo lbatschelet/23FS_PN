@@ -36,6 +36,8 @@ for i in range(1, number+1):
 print("Fakultät dieser Zahl: ", produkt)
 ```
 
+[Kompletter Quellcode](S7A1_for.py)
+
 ### Mögliche Lösung `while`-Schleife
 
 ```python
@@ -47,9 +49,11 @@ while number > 0:
 print("Fakultät dieser Zahl: ", produkt)
 ```
 
+[Kompletter Quellcode](S7A1_while.py)
+
 </details>
 
-## Aufgabe 2: 
+## Aufgabe 2: Durchschnittsalter
 
 > Schreiben Sie ein Programm, welches das Durchschnittsalter aller Studierenden einer Vorlesung berechnen kann. Die Anzahl der Studierenden ist dabei nicht bekannt. Ihr Programm soll so lange nach dem Alter der Studierenden fragen, bis eine gewisse Eingabe erfolgt, welche die Abfrage beendet. Danach soll das Durchschnittsalter der Studierenden auf zwei Nachkommastellen gerundet ausgegeben werden.
 > 
@@ -80,7 +84,8 @@ another = "y"
 while another == "y" or another == "Y":
     alter_summe = 0
     count = 0
-    print("Dieses Programm rechnet ihnen das Durchschnittsalter einer Gruppe aus. Geben sie das alter der Personen einzeln ein. Beenden können Sie das Programm mit der Eingabe 0")
+    print("Dieses Programm rechnet ihnen das Durchschnittsalter einer Gruppe aus.")
+    print("Geben sie das alter der Personen einzeln ein. Beenden können Sie das Programm mit der Eingabe 0")
     alter_neu = int(input("Geben Sie das Alter eines Studierenden oder einer Studierenden ein: "))
     while alter_neu > 0:
         count += 1
@@ -94,9 +99,11 @@ while another == "y" or another == "Y":
     another = input("Möchten Sie ein weiteres Durchschnittsalter berechnen? (y/n)")
 ```
 
+[Kompletter Quellcode](S7A2.py)
+
 </details>
 
-## Aufgabe 3:
+## Aufgabe 3: Umrechnung von km/h in mph
 
 > Schreiben Sie ein Programm, welches die Werte `60`, `70`, ..., `120` von km/h in mph umrechnet und ausgibt (`km/h / 1.609 = mph`). Verwenden Sie in Ihrem Programm eine `for`-Schleife. Die Ausgabe Ihres Skripts könnte wie folgt aussehen:
 >
@@ -118,5 +125,7 @@ for val_m in range(60, 121, 10):
     val_i = val_m / 1.609
     print(val_m, "km/h = ", round(val_i, 2), "mph" )
 ```
+
+[Kompletter Quellcode](S7A3.py)
 
 </details>
