@@ -14,12 +14,16 @@
 > ```
 > Zusatzaufgabe: Schaffen Sie es, die zweizeilige Ausgabe mit einer einzigen print Anweisung zu erzeugen?
 
+<details>
+	<summary> Klicke hier um die Lösung anzuzeigen.</summary>
 
 ```python
 print("Hallo unsere Namen sind Sofia, Florian und Lukas", "Wir freuen uns Python zu lernen!", sep="\n")
 ```
 
 [S5A1.py](S5A1.py)
+
+</details>
 
 ### Aufgabe 2:
 
