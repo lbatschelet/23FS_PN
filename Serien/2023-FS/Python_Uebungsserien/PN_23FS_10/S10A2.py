@@ -7,14 +7,14 @@ S10A2.py
 """
 
 student_lectures = {
-    "Sarah": {"V1", "V2", "V3"},
-    "Jasmine": {"V1", "V2"},
-    "Dominique": {"V2", "V3"},
-    "Stefan": {"V3"},
-    "Uda": {"V1", "V3"},
-    "Nina": {"V1", "V3"},
-    "Berfin": {"V1", "V2"},
-    "Marius": {"V1", "V3"},
+    "Sarah":        {"V1", "V2", "V3"},
+    "Jasmine":      {"V1", "V2"      },
+    "Dominique":    {      "V2", "V3"},
+    "Stefan":       {            "V3"},
+    "Uda":          {"V1",       "V3"},
+    "Nina":         {"V1",       "V3"},
+    "Berfin":       {"V1", "V2"      },
+    "Marius":       {"V1",       "V3"},
     }
 
 def get_lectures(name):
@@ -28,7 +28,6 @@ def get_students_lectures(V1, V2):
     return students
 
 print("Studierende die V1 und V2 besuchen:", get_students_lectures("V1", "V2"))
-
 
 another = "y"
 
