@@ -37,7 +37,7 @@ Die Platzhalter `{}` im String werden durch die übergebenen Argumente ersetzt: 
 
 ## Aufgabe 2: Higher-Lower-Game
 
-> Im Code auf [hier](S9A2_VORLAGE.py) finden Sie eine noch nicht fertiggestellte Version des Higher-Lower-Spieles.  
+> Im Code auf [hier](PN_23FS_09B/S9A2_VORLAGE.py) finden Sie eine noch nicht fertiggestellte Version des Higher-Lower-Spieles.  
 > Ihre Aufgabe ist es, das Spiel zu vervollständigen.  
 >
 > ```python
