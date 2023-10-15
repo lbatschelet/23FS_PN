@@ -34,9 +34,9 @@ print("5 zufällig ausgewählte Zahlen:", ausgewaehlte_zahlen)
 ## Aufgabe 2: Standardmodul `math`
 
 > Schreiben Sie ein Programm, welches nach zwei Zahlen x und y fragt. Berechnen Sie mit diesen Werten die folgende Formel:
->
-> ![Funktion](PN_23FS_08B/RESOURCES/funktion_A2.png)
-> 
+
+![Funktion](PN_23FS_08B/RESOURCES/funktion_A2.png)
+
 > Geben Sie das Resultat abgerundet aus.
 
 <details>
