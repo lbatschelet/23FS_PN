@@ -12,7 +12,7 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 - [Eine Anleitung zum bearbeiten und Weiterführen dieses Repositorys](CONTRIBUTE.md)
 
 > [!WARNING]
-> Sämtliches Material (exkl. Skripte und Aufgabenblätter für die Serien) wurde von Studierenden verfasst und ist nicht offiziell von der Universität Bern oder den Dozierenden des Kurses autorisiert oder geprüft. Obwohl wir unser Bestes geben, die Informationen so genau und vollständig wie möglich bereitzustellen, gibt es keine Garantie für die Vollständigkeit oder Fehlerfreiheit des Materials. Benutze dieses Material auf eigene Gefahr und ziehe bei Unklarheiten immer die offiziellen Kursmaterialien oder die Dozierenden zurate.
+> Sämtliches Material (exkl.Aufgabenblätter für die Serien) wurde von Studierenden verfasst und ist nicht offiziell von der Universität Bern oder den Dozierenden des Kurses autorisiert oder geprüft. Obwohl wir unser Bestes geben, die Informationen so genau und vollständig wie möglich bereitzustellen, gibt es keine Garantie für die Vollständigkeit oder Fehlerfreiheit des Materials. Benutze dieses Material auf eigene Gefahr und ziehe bei Unklarheiten immer die offiziellen Kursmaterialien oder die Dozierenden zurate.
 
 ## Lass uns dieses Repository gemeinsam verbessern und aktuell halten! 🌱
 
