@@ -6,11 +6,9 @@ Dieses Repository enthält Materialien für den Kurs "Programmieren für Naturwi
 
 - [Ein Forum](https://github.com/lbatschelet/Programmieren-fuer-Naturwissenschaften/discussions)
 - [Eine Zusammenfassung / Dokument welches an der Prüfung hilfreich ist](Zusammenfassung/ZF_FS23_Programmieren_für_Naturwissenschaften.pdf)
-- [Excel Übungsserien 1-4 (leider unkommentiert)](Serien/Excel_Uebungsserien)
-- [Python Übungsserien 5-11](Serien/Python_Uebungsserien)
-    - Theorieaufgaben sind jeweils in der .md Datei oder im entsprechenden .pdf
+- [Bearbeitete Übungsserien](Serien)
+  - [Frühlingssemester 2023](Serien/2023-FS) (Wochen 1 - 4 sind noch Excel, ab Woche 5 ist es Python)
 - [Alle gelösten Aufgaben der Wiederholungsserie Python](Wiederholungsserie_zur_Prüfungsvorbereitung)
-- [Alle Aufgabenblätter](Serien/Aufgabenblätter)
 - [Eine Anleitung zum bearbeiten und Weiterführen dieses Repositorys](CONTRIBUTE.md)
 
 > [!WARNING]
@@ -35,7 +33,7 @@ Dieses Projekt lebt von der Gemeinschaft – also von dir! Wir haben hier bereit
 3. **Pull Request erstellen**: Sobald du deine Änderungen vorgenommen hast, erstelle einen Pull Request.
 4. **Review und Merge**: Nach einer Überprüfung können deine Beiträge in das Hauptprojekt integriert werden.
 
-Schau dir für mehr Details die [`CONTRIBUTE.md`](CONTRIBUTE.md) im Repository an.
+Schau dir für mehr Details und einen Kurzbeschrieb meines Workload die [`CONTRIBUTE.md`](CONTRIBUTE.md) im Repository an.
 
 ## Lizenz
 
