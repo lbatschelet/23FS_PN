@@ -9,6 +9,42 @@
 >
 > **Tipp:** Wenn Sie nicht wissen, wie Sie in einer Funktion mehrere Werte zurückgeben können, betrachten Sie Beispiel 76 im Skript auf Seite 102
 
+<details>
+<summary>Mögliche Lösung anzeigen</summary>
+
+```python
+import math
+
+def circle(rad=0):
+    area = math.pow(rad, 2) * math.pi
+    circumference = rad * 2 * math.pi
+    return area, circumference
+
+radien = []
+flaechen = []
+umfange = []
+
+loop = "y"
+while loop == "y":
+    rad = float(input("Geben Sie den Radius eines Kreises ein: "))
+    area, circumference = circle(rad)
+    radien.append(round(rad, 2))
+    flaechen.append(round(area, 2))
+    umfange.append(round(circumference, 2))
+    print("Radius:", rad)
+    print("Fläche: ", area)
+    print("Umfang: ", circumference)
+    loop = input("Wollen Sie noch einen weiteren Kreis berechnen? (y/n)")
+
+print("Radien: ", radien)
+print("Flächen: ", flaechen)
+print("Umfänge: ", umfange)
+
+```
+
+[Vollständiger Quellcode](S9A1.py)
+
+</details>
 
 ## Aufgabe 2: Funktionsparameter
 
@@ -22,6 +58,17 @@
 > 
 > Tabelle 1: Ihre Funktion sollte dieselben Ausgaben generieren, wie in dieser Tabelle dargestellt.
 
+<details>
+    <summary>Mögliche Lösung anzeigen</summary>
+
+```python
+def greetings(name, gruss="Guten Morgen!", temp=20):
+    print("Hallo ", name, "!\n", gruss, "\nEs ist draussen", temp, "Grad warm.")
+```
+
+[Vollständiger Quellcode](S9A2.py)
+
+</details>
 
 ## Aufgabe 3: Funktionen auslagern
 
@@ -46,3 +93,52 @@ for i in range(len(ages)):
 import statistics
 print("Mittelwert der Alter: ", round(statistics.mean(ages), 2))
 ```
+
+<details>
+    <summary>Mögliche Lösung anzeigen</summary>
+
+### S9A3_main.py
+
+```python
+from S9A3_ages import age_list, sort_and_print, mean_and_print
+
+ages = age_list()
+
+sort_and_print(ages)
+
+mean_and_print(ages)
+```
+
+### S9A3_ages.py
+
+```python
+import statistics
+
+def age_list():
+    ages = []
+    done = False
+
+    while not done:
+        user_input = int(input("Alter eingeben (-1 zum Beenden): "))
+        if user_input == -1:
+            done = True
+
+        else:
+            ages.append(user_input)
+    return ages
+
+def sort_and_print(list):
+    print("Alle Alter aufsteigend sortiert:")
+    list.sort()
+    for i in range(len(list)):
+        print("Alter von Student:in", i + 1, list[i])
+
+def mean_and_print(list1):
+    mean = statistics.mean(list1)
+    print("Durchschnittsalter:", round(mean, 2))
+```
+
+- [Vollständiger Quellcode (S9A3_main.py)](S9A3_main.py)
+- [Vollständiger Quellcode (S9A3_ages.py)](S9A3_ages.py)
+
+</details>

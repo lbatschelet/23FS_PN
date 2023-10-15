@@ -1,9 +1,0 @@
-ages = age_list()
-
-print("Alle Alter aufsteigend sortiert:")
-ages.sort()
-for i in range(len(ages)):
-    print("Alter von Student:in", i, ages[i])
-
-import statistics
-print("Mittelwert der Alter: ", round(statistics.mean(ages), 2))
