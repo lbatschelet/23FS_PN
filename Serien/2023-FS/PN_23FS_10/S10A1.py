@@ -22,4 +22,4 @@ grades =   [[5.0, 5.5, 4.5],
             [3.5, 5.0, 6.0]]
 
 compute_final_grades(students, grades)
-print(students, end=\n)
+print(students)

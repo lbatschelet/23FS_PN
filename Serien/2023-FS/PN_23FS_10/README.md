@@ -26,7 +26,7 @@
 > Die Ausgabe sollte folgendermassen aussehen:
 >
 > ```
-> [['Joe', '5.00'], ['Kim', '4.50'], ['Sam', '4.83']
+> [['Joe', '5.00'], ['Kim', '4.50'], ['Sam', '4.83']]
 > ```
 >
 > Tipp: Lagern Sie die Berechnung der Durchschnittsnote in eine Hilfsfunktion `compute_avg` aus.
