@@ -65,7 +65,7 @@
 <details>
 	<summary> Mögliche Lösung anzeigen </summary>
 
-- **Bemerkung:** Die Datei `passagierfrequenz.csv` muss im gleichen Verzeichnis wie das Python-Skript liegen.
+- **Bemerkung:** Die Datei [`passagierfrequenz.csv`](PN_23FS_08/passagierfrequenz.csv) muss im gleichen Verzeichnis wie das Python-Skript liegen.
 - Diese Lösung funktioniert zwar, ist aber nicht besonders elegant. Es gibt sicherlich bessere, und vor allem übersichtlichere Lösungen.
 
 ```python

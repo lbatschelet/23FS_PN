@@ -64,11 +64,11 @@ print("Ergebnis:", math.floor(ergebnis))
 
 ## Aufgabe 3: Standardmodul `statistics`
 
-> Auf Ilias finden Sie eine Datei `data.csv`. Die Zahlen geben den jährlichen Bevölkerungsstand von 1941 bis 2021 der Stadt Bern an[^1]. Schreiben Sie ein Programm, welches die Datei einliest und danach folgende Aufgaben erfüllt:
+> Auf Ilias finden Sie eine Datei [`data.csv`](PN_23FS_08B/data.csv). Die Zahlen geben den jährlichen Bevölkerungsstand von 1941 bis 2021 der Stadt Bern an[^1]. Schreiben Sie ein Programm, welches die Datei einliest und danach folgende Aufgaben erfüllt:
 >
 > - Berechnen Sie den Mittelwert und den Median des Bevölkerungsstandes über alle Jahre hinweg mit dem Modul `statistics`. **Tipp:** Entfernen Sie den Leerschlag innerhalb der Zahlen (130 688 → 130688).
 > - Geben Sie das Jahr an, in welchem das grösste Bevölkerungswachstum beobachtet werden kann hat im Vergleich zum Vorjahr.
-> - Schreiben Sie Ihre Ergebnisse in eine Textdatei `results.txt`.
+> - Schreiben Sie Ihre Ergebnisse in eine Textdatei [`results.txt`](PN_23FS_08B/results.txt).
 
 [^1]: Quelle: https://www.bern.ch/themen/stadt-recht-und-politik/bern-in-zahlen/katost/01bev
 
