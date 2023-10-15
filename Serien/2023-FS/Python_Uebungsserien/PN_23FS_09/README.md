@@ -13,7 +13,7 @@
 ## Aufgabe 2: Funktionsparameter
 
 > Schreiben Sie eine Funktion `greet`, welche bis zu drei Parameter akzeptiert, jedoch mindestens einen Parameter benötigt, nämlich den Namen einer Person. Unten finden Sie einige Beispiele, welche Ausgaben die Funktion generieren sollten. Passen Sie Ihre Funktion so an, dass die Beispiele in Tabelle 1 funktionieren. Falls Sie Hilfe brauchen, schauen Sie sich Beispiel 73 auf Seite 94 im Skript an
-
+> 
 > | Funktionsaufruf                        | Ausgabe                                                              |
 > | -------------------------------------- | -------------------------------------------------------------------- |
 > | `greet("Monika")`                      | `Hallo Monika!`<br>`Guten Morgen!`<br>`Es ist 20 Grad draussen.`       |
@@ -26,23 +26,23 @@
 ## Aufgabe 3: Funktionen auslagern
 
 > Betrachten Sie das untenstehendes Programm. Sie werden bemerken, dass das Programm verschiedene Verantwortungen übernimmt. Ihre Aufgabe ist es, die einzelnen Verantwortungen zu identifizieren und für jede Verantwortung je eine Funktion zu definieren und den Code entsprechend auszulagern. Rufen Sie danach Ihre Funktionen in der richtigen Reihenfolge auf – verwenden Sie wo sinnvoll Parameter und Rückgaben.
->
-> ```python
-> ages = []
-> done = False
->
-> while not done:
->     user_input = int(input("Alter eingeben: (-1 zum Beenden): "))
->     if user_input == -1:
->         done = True
->     else:
->         ages.append(user_input)
->
-> print("Alle Alter aufsteigend sortiert:")
-> ages.sort()
-> for i in range(len(ages)):
->     print("Alter von Student", i, ages[i])
->
-> import statistics
-> print("Mittelwert der Alter: ", round(statistics.mean(ages), 2))
-> ```
+
+```python
+ages = []
+done = False
+
+while not done:
+    user_input = int(input("Alter eingeben: (-1 zum Beenden): "))
+    if user_input == -1:
+        done = True
+    else:
+        ages.append(user_input)
+
+print("Alle Alter aufsteigend sortiert:")
+ages.sort()
+for i in range(len(ages)):
+    print("Alter von Student", i, ages[i])
+
+import statistics
+print("Mittelwert der Alter: ", round(statistics.mean(ages), 2))
+```
