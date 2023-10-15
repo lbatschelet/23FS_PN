@@ -14,7 +14,7 @@
 
 ### Python
 
-- [Serie 5: Einführung und Motivation](PN_23FS_05/README.md#serie-5-einführung-und-motivation)
+- [Serie 5: Einführung und Motivation](PN_23FS_05#serie-5-einführung-und-motivation)
 - [Serie 6: Variablen und Listen](PN_23FS_06/README.md#serie-6-variablen-und-listen)
   - [Zusatzserie 6: Variablen und Listen](PN_23FS_06/PN_23FS_06B/README.md#serie-6b-variablen-und-listen)
 - [Serie 7: Schleifen und Bedingungen](PN_23FS_07/README.md#serie-7-schleifen-und-bedingungen)
