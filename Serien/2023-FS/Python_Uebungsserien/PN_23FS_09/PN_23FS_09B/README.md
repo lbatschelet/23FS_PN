@@ -40,7 +40,7 @@ Die Platzhalter `{}` im String werden durch die übergebenen Argumente ersetzt: 
 > Im Code auf [hier](S9A2_VORLAGE.py) finden Sie eine noch nicht fertiggestellte Version des Higher-Lower-Spieles.  
 > Ihre Aufgabe ist es, das Spiel zu vervollständigen.  
 >
-> > ```python
+> ```python
 > import random as rnd
 > 
 > # TODO: Aufgabe 2: Ihre Implementation der Funktion askguess:
