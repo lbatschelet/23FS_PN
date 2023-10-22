@@ -50,9 +50,9 @@
 }
 \makeatother
 
-\DeclareUnicodeCharacter{00FC}{\"u} % Für das Zeichen ü
-\DeclareUnicodeCharacter{00F6}{\"o} % Für das Zeichen ö
-\DeclareUnicodeCharacter{00E4}{\"a} % Für das Zeichen ä
+% \DeclareUnicodeCharacter{00FC}{\"u} % Für das Zeichen ü
+% \DeclareUnicodeCharacter{00F6}{\"o} % Für das Zeichen ö
+% \DeclareUnicodeCharacter{00E4}{\"a} % Für das Zeichen ä
 
 \definecolor{codegreen}{rgb}{0,0.7,0.2}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -478,7 +478,7 @@ for i in range(1, 6):
 
 \newpage
 \section{Quadratfunktion}
-Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl $x$ erwartet und danach eine Liste der Grösse $x$ mit den Werten [12, 22, . . . , x2] generiert und sie zur\"uckgibt.
+Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl $x$ erwartet und danach eine Liste der Grösse $x$ mit den Werten [12, 22, . . . , x2] generiert und sie zurückgibt.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 def quadratliste(x):
     lst = []
@@ -541,7 +541,7 @@ Sind folgenden Booleschen Aussagen "True" oder "False"?
 \end{tcblisting}
 
 \section{Lokale Maxima}
-F\"ur diese Aufgabe soll zunächst eine neue Liste erstellt werden, in welcher die einzelnen Elemente mittels Eingabe des Benutzers bestimmt werden. Sie können ähnlich wie in Aufgabe 5 in Serie 10 eine Abbruchbedingung f\"ur die Eingabe festlegen. Dann schreiben Sie eine Funktion, welche die vom Benutzer definierte Liste als Parameter entgegennimmt, um dann eine neue Liste mit den \textit{lokalen Maxima} zu definieren und auszugeben. In dieser Übung ist eine Zahl genau dann ein lokales Maximum, wenn ihre beiden Nachbarn strikt kleiner sind. Die erste und letzte Zahl in der Liste haben jeweils nur einen Nachbarn und sind somit nach unserer Definition keine lokalenMaxima. Sie können Ihren Code beispielsweise mit der Liste [2,5,4,3,3,7,6,1] testen. Die Ausgabe sollte [5,7] lauten.
+Für diese Aufgabe soll zunächst eine neue Liste erstellt werden, in welcher die einzelnen Elemente mittels Eingabe des Benutzers bestimmt werden. Sie können ähnlich wie in Aufgabe 5 in Serie 10 eine Abbruchbedingung für die Eingabe festlegen. Dann schreiben Sie eine Funktion, welche die vom Benutzer definierte Liste als Parameter entgegennimmt, um dann eine neue Liste mit den \textit{lokalen Maxima} zu definieren und auszugeben. In dieser Übung ist eine Zahl genau dann ein lokales Maximum, wenn ihre beiden Nachbarn strikt kleiner sind. Die erste und letzte Zahl in der Liste haben jeweils nur einen Nachbarn und sind somit nach unserer Definition keine lokalenMaxima. Sie können Ihren Code beispielsweise mit der Liste [2,5,4,3,3,7,6,1] testen. Die Ausgabe sollte [5,7] lauten.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 another = "y"
 lst = []
@@ -566,7 +566,7 @@ print(maxima(lst))
 \section{Summe einer Liste < Threshold}
 Schreiben Sie eine Funktion, welche eine Liste lst und einen Schwellwert threshold entgegennimmt.
 Falls die Summe der Einträge in lst kleiner ist als threshold, gibt Ihre Funktion
-True und sonst False zur\"uck. Testen Sie Ihre Funktionmit zwei Eingaben.
+True und sonst False zurück. Testen Sie Ihre Funktionmit zwei Eingaben.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 def list_threshold(lst, threshold):
     sum = 0
@@ -583,7 +583,7 @@ False
 \end{tcblisting}
 
 \section{FizzBuzz}
-Schreiben Sie eine Funktion, die f\"ur eine ganze Zahl num (die als Parameter an die Funktion \"ubergeben wird) \"uberpr\"uft, ob diese durch 3 und/oder durch 5 teilbar ist. Falls die Zahl weder durch 3 noch durch 5 teilbar ist, soll die Zahl ausgegeben werden. Ist die Zahl durch 3 teilbar, soll statt der Zahl „Bizz“ ausgegeben werden. Ist die aktuelle Zahl durch 5 teilbar, soll statt der Zahl „Buzz“ ausgegeben werden. Ist die Zahl sowohl durch 3 als auch durch 5 teilbar, soll „Bizz- Buzz“ ausgegeben werden. Rufen Sie die Funktion f\"ur alle ganzen Zahlen von 1 bis 100 auf.
+Schreiben Sie eine Funktion, die für eine ganze Zahl num (die als Parameter an die Funktion übergeben wird) überprüft, ob diese durch 3 und/oder durch 5 teilbar ist. Falls die Zahl weder durch 3 noch durch 5 teilbar ist, soll die Zahl ausgegeben werden. Ist die Zahl durch 3 teilbar, soll statt der Zahl „Bizz“ ausgegeben werden. Ist die aktuelle Zahl durch 5 teilbar, soll statt der Zahl „Buzz“ ausgegeben werden. Ist die Zahl sowohl durch 3 als auch durch 5 teilbar, soll „Bizz- Buzz“ ausgegeben werden. Rufen Sie die Funktion für alle ganzen Zahlen von 1 bis 100 auf.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 def fizzbuzz(num):
     if num % 3 == 0 and num % 5 != 0:
@@ -612,7 +612,7 @@ print(random.randint(-10, 0))
 \end{tcblisting}
 
 \section{Geldspielautomat}
-Schreiben Sie eine Funktion, welche einen Geldspielautomaten simuliert. Hierzu sollen drei zufällige Zahlen zwischen 0 und 9 generiert werden und nebeneinander ausgegeben werden. Wenn zwei bzw. drei Ziffern gleich sind, gewinnt der Benutzer den kleinen bzw. grossen Preis (erzeugen Sie entsprechende Ausgaben). Das Spiel soll so lange fortgef\"uhrt werden, bis sich der Benutzer entscheidet, das Spiel zu beenden.
+Schreiben Sie eine Funktion, welche einen Geldspielautomaten simuliert. Hierzu sollen drei zufällige Zahlen zwischen 0 und 9 generiert werden und nebeneinander ausgegeben werden. Wenn zwei bzw. drei Ziffern gleich sind, gewinnt der Benutzer den kleinen bzw. grossen Preis (erzeugen Sie entsprechende Ausgaben). Das Spiel soll so lange fortgeführt werden, bis sich der Benutzer entscheidet, das Spiel zu beenden.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 import random
 
@@ -633,7 +633,7 @@ while another == "y":
 \end{tcblisting}
 
 \section{Würfelsimulation}
-Schreiben Sie eine Funktion, welche 100W\"urfelw\"urfe simuliert und dabei jeweils zählt, wie oft jede Augenzahl auftaucht. Benutzen Sie daf\"ur eine Liste counter mit 6 Einträgen, welche der W\"urfelzahl entsprechen. Benutzen Sie dann die Funktion print, um die Liste auszugeben.
+Schreiben Sie eine Funktion, welche 100Würfelwürfe simuliert und dabei jeweils zählt, wie oft jede Augenzahl auftaucht. Benutzen Sie dafür eine Liste counter mit 6 Einträgen, welche der Würfelzahl entsprechen. Benutzen Sie dann die Funktion print, um die Liste auszugeben.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 import random
 
@@ -650,7 +650,7 @@ print(counter)
 
 \newpage
 \section{Quadratische funktion mit zwei Lösungen}
-Schreiben Sie eine Funktion, welche $p$ und $q$ als Parameter erwartet. Die Funktion soll f\"ur die Berechnung von $x_1$ und $x_2$ die folgende Formel verwenden und diese dann zur\"uckgeben:
+Schreiben Sie eine Funktion, welche $p$ und $q$ als Parameter erwartet. Die Funktion soll für die Berechnung von $x_1$ und $x_2$ die folgende Formel verwenden und diese dann zurückgeben:
 \begin{equation*}
     x_{1, 2} = - \frac{p}{2} \pm \sqrt{\left( \frac{p}{2}\right)^2 -q}
 \end{equation*}
@@ -675,7 +675,7 @@ def calculate_x(p, q):
 \end{tcblisting}
 
 \section{Dateiimport und Keywordsuche}
-Auf Ilias finden Sie die Datei data.txt. Schreiben Sie eine Funktion, die einen Parameter search\_string entgegennimmt. Innerhalb der Funktion wird die Datei data.txt geöffnet und danach wird \"uberpr\"uft, ob einer der Einträge in data.txt dem Parameter search\_string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zur\"uck. Testen Sie Ihre Funktion mit zwei verschiedenen Parametern.
+Auf Ilias finden Sie die Datei data.txt. Schreiben Sie eine Funktion, die einen Parameter search\_string entgegennimmt. Innerhalb der Funktion wird die Datei data.txt geöffnet und danach wird überprüft, ob einer der Einträge in data.txt dem Parameter search\_string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zurück. Testen Sie Ihre Funktion mit zwei verschiedenen Parametern.
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
 def search_in_file(search_string):
     with open("data.txt", "r") as file:
@@ -689,11 +689,11 @@ print(search_in_file("Haus"))
 
 \newpage
 \section{scipy und Kurvenplot}
-In dieser Aufgabe beschäftigen wir uns mit der scipy-Funktion curve\_fit. Diese Funktion nimmt als Parameter eine Funktion, und zwei Listen xdata und ydata und gibt ein 2-Tupel zur\"uck. Gehen Sie Schritt f\"ur Schritt durch die Aufgabe:
+In dieser Aufgabe beschäftigen wir uns mit der scipy-Funktion curve\_fit. Diese Funktion nimmt als Parameter eine Funktion, und zwei Listen xdata und ydata und gibt ein 2-Tupel zurück. Gehen Sie Schritt für Schritt durch die Aufgabe:
 \begin{enumerate}
     \item Importieren Sie Bibliotheken numpy, matplotlib.pyplot, scipy.optimize und random
     \item Definieren Sie die folgende Funktion: $f(x,a,b,c) = a \cdot e^{-bx} + c$
-    \item Kreieren Sie eine Variable xdata und weisen Sie ihr eine Liste mitWerten zwischen 0 und 4 in 0.1-Schritten zu. \textbf{Tipp:} Die Funktion numpy.arange(a,b,c) gibt eine Liste zwischen a und b mit Einträgen in Schritt c zur\"uck.
+    \item Kreieren Sie eine Variable xdata und weisen Sie ihr eine Liste mitWerten zwischen 0 und 4 in 0.1-Schritten zu. \textbf{Tipp:} Die Funktion numpy.arange(a,b,c) gibt eine Liste zwischen a und b mit Einträgen in Schritt c zurück.
     \item Kreieren Sie eine Variable ydata und weisen Sie ihr eine Liste zu. Das Element an Stelle i in dieser Liste soll folgendenWert haben: $f (x_i ,2.5,1.3,0.5)$ + random.uniform(-0.1,0.1), wobei $x_i$ das i-te Element in der Liste xdata ist.
     \item Rufen Sie die Funktion curve\_fit auf mit den passenden Parametern und speichern Sie das Resultat in Variabeln popt und pcov ab.
     \item Rufen Sie die Funktion plot mit den Parametern xdata und ydata auf.
@@ -735,9 +735,9 @@ matplotlib.pyplot.show()
 
 \section{Verständnisfragen}
 \begin{enumerate}
-    \item Python verf\"ugt \"uber eine Reihe von sogenannten eingebauten Funktionen. Nennen Sie zwei Beispiele solcher Funktionen.
+    \item Python verfügt über eine Reihe von sogenannten eingebauten Funktionen. Nennen Sie zwei Beispiele solcher Funktionen.
     \item Wie rufen Sie in Python eine Funktion bar (ohne Parameter) aus dem importierten Modul foo auf?
-    \item Python Quellcode muss vor der Ausf\"uhrung nicht kompiliert werden. Weshalb nicht?
+    \item Python Quellcode muss vor der Ausführung nicht kompiliert werden. Weshalb nicht?
     \item Wie können Sie Python Quellcode kommentieren. Geben Sie zwei Möglichkeiten mit je einem Beispiel an.
     \item Die folgende Funktion printmax soll den grösseren der beiden Parameter val1 oder val2 ausgeben. ImQuellcode befinden sich ein semantischer und ein syntaktischer Fehler. Markieren Sie beide Fehler (mit sem bzw. syn) und korrigieren Sie diese.
 \end{enumerate}
@@ -837,9 +837,9 @@ print(total)
 
 \section{Funktionen mit Userinput}
 \begin{enumerate}[label=(\alph*)]
-    \item Schreiben Sie eine Funktion ohne Parameter, welche vom Benutzer zunächst eine Zahl \"uber die Tastatur einliest und danach alle geraden, ganzen Zahlen von 0 bis zu dieser Zahl (inklusive) ausgibt.
-    \item Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl x erwartet und danach eine Liste der Grösse x mit den Werten [1, 2, ..., x] generiert und zur\"uckgibt.
-    \item Schreiben Sie eine Funktion, welche eine Liste lst und einen Wert value entgegennimmt. Falls der Wert value noch nicht in lst vorhanden ist, wird dieser zu lst hinzugef\"ugt, andernfalls wird die Liste nicht verändert.
+    \item Schreiben Sie eine Funktion ohne Parameter, welche vom Benutzer zunächst eine Zahl über die Tastatur einliest und danach alle geraden, ganzen Zahlen von 0 bis zu dieser Zahl (inklusive) ausgibt.
+    \item Schreiben Sie eine Funktion, die als Parameter eine ganze Zahl x erwartet und danach eine Liste der Grösse x mit den Werten [1, 2, ..., x] generiert und zurückgibt.
+    \item Schreiben Sie eine Funktion, welche eine Liste lst und einen Wert value entgegennimmt. Falls der Wert value noch nicht in lst vorhanden ist, wird dieser zu lst hinzugefügt, andernfalls wird die Liste nicht verändert.
 \end{enumerate}
 
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
@@ -862,9 +862,9 @@ def is_in_list(lst, value):
 \newpage
 \section{string-Manipulationen und Matrix}
 \begin{enumerate}[label=(\alph*)]
-    \item Schreiben Sie eine Funktion,welche eine Zeichenkette string entgegennimmt, in string alle Grossbuchstaben mit Kleinbuchstaben und alle Zeichen ‘c’ mit ‘k’ ersetzt. Die resultierende Zeichenkette soll zur\"uckgegeben werden.
-    \item Gegeben sei eine Datei data.txt, in der auf jeder Zeile ein Eintrag steht. Schreiben Sie eine Funktion namens dataContains(searchString), welche data.txt öffnet und danach \"uberpr\"uft, ob einer der Einträge in data.txt dem Parameter search-string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zur\"uck.
-    \item Schreiben Sie eine Funktion,welche eine zweidimensionale Liste matrix mit Zahlen entgegennimmt. Ihre Funktion gibt den maximalen Wert zur\"uck, der sich in matrix befindet.
+    \item Schreiben Sie eine Funktion,welche eine Zeichenkette string entgegennimmt, in string alle Grossbuchstaben mit Kleinbuchstaben und alle Zeichen ‘c’ mit ‘k’ ersetzt. Die resultierende Zeichenkette soll zurückgegeben werden.
+    \item Gegeben sei eine Datei data.txt, in der auf jeder Zeile ein Eintrag steht. Schreiben Sie eine Funktion namens dataContains(searchString), welche data.txt öffnet und danach überprüft, ob einer der Einträge in data.txt dem Parameter search-string entspricht. Ist dies der Fall, gibt die Funktion True und sonst False zurück.
+    \item Schreiben Sie eine Funktion,welche eine zweidimensionale Liste matrix mit Zahlen entgegennimmt. Ihre Funktion gibt den maximalen Wert zurück, der sich in matrix befindet.
 \end{enumerate}
 
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
@@ -928,7 +928,7 @@ def max_matrix(matrix):
     \item Gegeben sind zwei Variablen num1 = 17.8 und num2 = 99.7. Schreiben Sie eine print Anweisung, welche die aktuellen Werte von num1 und num2 mithilfe von Ersatzfeldern ausgibt. Die Ausgabe soll so aussehen: \newline
     \texttt{Messung 1 ist 17.8 und Messung 2 ist 99.7.}
     
-    \item Gegeben sei ein Wörterbuch dct. Schreiben Sie ein Code-Fragment, das \"uberpr\"uft, ob der Schl\"ussel 17 im Wörterbuch vorhanden ist. Falls ja, soll "Schl\"ussel 17 vorhanden!" ausgegeben werden.
+    \item Gegeben sei ein Wörterbuch dct. Schreiben Sie ein Code-Fragment, das überprüft, ob der Schlüssel 17 im Wörterbuch vorhanden ist. Falls ja, soll "Schlüssel 17 vorhanden!" ausgegeben werden.
 \end{enumerate}
 
 
@@ -954,8 +954,8 @@ if 17 in dct:
 \section{Listenmanipultaionen}
 
 \begin{enumerate}[label=(\alph*)]
-    \item Gegeben sei eine Funktion do\_something, welche eine ganze Zahl als formalen Parameter definiert (diese Funktion m\"ussen Sie nicht definieren). Rufen Sie die Funktion do\_something mit den tatsächlichen Parametern 1, 2, 3, ... , 1000 auf.
-    \item Gegeben sei eine Liste values,welche ganze Zahlen speichert (die Liste m\"ussen Sie nicht definieren). Solange die Liste values nicht leer ist, entfernen Sie ein zufälliges Element aus der Liste und geben dieses aus.
+    \item Gegeben sei eine Funktion do\_something, welche eine ganze Zahl als formalen Parameter definiert (diese Funktion müssen Sie nicht definieren). Rufen Sie die Funktion do\_something mit den tatsächlichen Parametern 1, 2, 3, ... , 1000 auf.
+    \item Gegeben sei eine Liste values,welche ganze Zahlen speichert (die Liste müssen Sie nicht definieren). Solange die Liste values nicht leer ist, entfernen Sie ein zufälliges Element aus der Liste und geben dieses aus.
     \item Gegeben sei eine Zeichenkette name (z.B. name = "Urs"). Schreiben Sie ein Code-Fragment, das jeden einzelnen Buchstaben und den zugehörigen Index auf je einer Zeile ausgibt. Also beispielsweise: \newline
     \texttt{0 : U \newline
     1 : r \newline
@@ -988,8 +988,8 @@ while len(values) < 100: #Bedingung damit keine Endlosschlaufe entsteht
 \section{Mathematische Funktionen und statistik über Datei}
 
 \begin{enumerate}[label=(\alph*)]
-    \item Schreiben Sie eine Funktion \texttt{func}, welche zwei Gleitkommazahlen a und b als Parameter erwartet, den Term $\frac{a^2 + b}{b + 1}$ berechnet und diesen zur\"uckgibt.
-    \item Schreiben Sie eine Funktion compare\_to, welche zwei Gleitkommazahlen f1 und f2 als Parameter erwartet: Falls die beiden Werte identisch sind, gibt Ihre Funktion 0 zur\"uck, ist der erste Parameter f1 grösser als f2, gibt Ihre Funktion 1 und sonst -1 zur\"uck.
+    \item Schreiben Sie eine Funktion \texttt{func}, welche zwei Gleitkommazahlen a und b als Parameter erwartet, den Term $\frac{a^2 + b}{b + 1}$ berechnet und diesen zurückgibt.
+    \item Schreiben Sie eine Funktion compare\_to, welche zwei Gleitkommazahlen f1 und f2 als Parameter erwartet: Falls die beiden Werte identisch sind, gibt Ihre Funktion 0 zurück, ist der erste Parameter f1 grösser als f2, gibt Ihre Funktion 1 und sonst -1 zurück.
     \item Schreiben Sie eine Funktion reset\_list, die eine Liste lst als Parameter erwartet. Ihre Funktion ersetzt jeden vorhandenen Wert in der Liste mit dem Wert 0.
     \item Ihre Aufgabe ist es:
     \begin{enumerate}[label=(\alph*)]
@@ -997,7 +997,7 @@ while len(values) < 100: #Bedingung damit keine Endlosschlaufe entsteht
         \item Auf den eingelesenen Daten den Mittelwert m und die Standardabweichung s zu berechnen
         \item Jedes Element x aus den Daten mit der Formel x- ms zu normieren.
         \item Die Liste mit den normierten Daten auszugeben. \newline
-        Hierzu stehen Ihnen die Funktionen mean\_std\_dev, normalize und fill\_list zur Verf\"ugung – nutzen Sie diese Funktionen f\"ur Ihr Python Programm.
+        Hierzu stehen Ihnen die Funktionen mean\_std\_dev, normalize und fill\_list zur Verfügung – nutzen Sie diese Funktionen für Ihr Python Programm.
     \end{enumerate}
 \end{enumerate}
 
@@ -1055,11 +1055,11 @@ print(normalized_data)
     \item Schreiben Sie eine Funktion \texttt{list\_splitting}, die eine Liste lst und eine ganze Zahl \texttt{split\_index} als Parameter erwartet. Die Funktion teilt Ihre Liste in zwei Teillisten lst1 und lst2 auf, so dass in lst1 die ersten \texttt{split\_index} Elemente und in lst2 die restlichen Elemente gespeichert sind. Also beispielsweise: \newline
     \texttt{values = [2, 4, 5, 1, 9] und split\_index = 3 \newline
     -> lst1 = [2, 4, 5], lst2 = [1, 9]} \newline
-    Ihre Funktion gibt beide Teillisten zur\"uck. Behandeln Sie den folgenden Fall: Falls der Parameter \texttt{split\_index} grösser ist als die Länge der Liste lst, entspricht lst1 der urspr\"unglichen Liste lst und lst2 ist eine leere Liste.
+    Ihre Funktion gibt beide Teillisten zurück. Behandeln Sie den folgenden Fall: Falls der Parameter \texttt{split\_index} grösser ist als die Länge der Liste lst, entspricht lst1 der ursprünglichen Liste lst und lst2 ist eine leere Liste.
     \item Schreiben Sie eine Funktion multiply, die zwei Listen vals1 und vals2 als Parameter erwartet. Die Funktion erstellt eine zweidimensionale Liste table, so dass in der i-ten Zeile und j-ten Spalte das Resultat von vals1[i] * vals2[j] gespeichert wird. Also beispielsweise: \newline
     \texttt{vals1 = [2, 5] und vals2 = [5, 6, 1] \newline
     -> table = [[10, 12, 2], [25, 30, 5]]} \newline
-    Ihre Funktion gibt die zweidimensionale Liste table zur\"uck.
+    Ihre Funktion gibt die zweidimensionale Liste table zurück.
 \end{enumerate}
 
 \begin{tcblisting}{listing only, listing options={language=Python, style=mystyle}}
