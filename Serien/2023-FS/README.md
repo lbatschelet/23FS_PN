@@ -1,4 +1,4 @@
-# Python Übungsserien FS 2023
+# Übungsserien FS 2023
 
 > [!NOTE]
 > Die Organisation des Kurses wurde auf das Herbstsemester 2023 hin geändert. Bis im Frühlingssemester 2023 war **EXCEL** auch Bestandteil des Kurses. Ab dem Herbstsemester 2023 wird EXCEL nicht mehr unterrichtet. Deshalb werden vermutlich die Serien nicht mehr übereinstimmen. Ebenfalls wird hier wohl kaum mehr der ganze Stoff abgedeckt. Die hier abgelegten Serien dienen aber sicherllich weiterhin als gute Übung für eine Hälfte des Semesters...
